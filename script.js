@@ -1153,7 +1153,7 @@ function renderFossils() {
         const popupDiv = document.createElement('div');
         popupDiv.style.minWidth = '240px';
         popupDiv.innerHTML =
-            (p.image ? '<img src="' + p.image + '" style="width:100%;border-radius:8px;margin-bottom:8px;" onerror="this.style.display=\'none\'">' : '') +
+            (p.image ? '<img src="' + p.image + '" style="width:100%;max-height:180px;object-fit:cover;border-radius:8px;margin-bottom:8px;" onerror="this.style.display=\'none\'">' : '') +
             '<b>' + p.name + '</b><br>' +
             '<small style="color:' + pinColor + ';"><b>' + p.type + '</b></small><br><br>' +
             (p.location ? '<b>Location:</b> ' + p.location + '<br>' : '') +
