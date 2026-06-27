@@ -1142,8 +1142,9 @@ function toggleFossils() {
 function renderFossils() {
     fossilsData.features.forEach(function(f) {
         const p = f.properties;
+        const pinColor = p.color || '#c8860a';
         const icon = L.divIcon({
-            html: '<div style="width:14px;height:14px;background:#c8860a;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>',
+            html: '<div style="width:14px;height:14px;background:' + pinColor + ';border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>',
             className: '',
             iconSize: [14, 14],
             iconAnchor: [7, 7]
@@ -1152,8 +1153,9 @@ function renderFossils() {
         const popupDiv = document.createElement('div');
         popupDiv.style.minWidth = '240px';
         popupDiv.innerHTML =
+            (p.image ? '<img src="' + p.image + '" style="width:100%;border-radius:8px;margin-bottom:8px;" onerror="this.style.display=\'none\'">' : '') +
             '<b>' + p.name + '</b><br>' +
-            '<small style="color:#c8860a;"><b>' + p.type + '</b></small><br><br>' +
+            '<small style="color:' + pinColor + ';"><b>' + p.type + '</b></small><br><br>' +
             (p.location ? '<b>Location:</b> ' + p.location + '<br>' : '') +
             (p.access ? '<b>Access:</b> ' + p.access + '<br>' : '') +
             (p.comment ? '<br>' + p.comment : '');
