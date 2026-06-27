@@ -1158,7 +1158,8 @@ function renderFossils() {
             '<small style="color:' + pinColor + ';"><b>' + p.type + '</b></small><br><br>' +
             (p.location ? '<b>Location:</b> ' + p.location + '<br>' : '') +
             (p.access ? '<b>Access:</b> ' + p.access + '<br>' : '') +
-            (p.comment ? '<br>' + p.comment : '');
+            (p.comment ? '<br>' + p.comment : '') +
+            (p.wam_url ? '<br><br><a href="' + p.wam_url + '" target="_blank" style="color:#1a7abf;font-size:12px;">🏛 View WAM type specimen</a>' : '');
         marker.bindPopup(popupDiv);
         fossilMarkers.push(marker);
     });
