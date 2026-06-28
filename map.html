@@ -26,6 +26,12 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
     background: none; border: none; color: #f2f2f2;
     font-size: 22px; cursor: pointer; padding: 6px; line-height: 1;
 }
+.topnav-search-btn {
+    background: none; border: none; color: #f2f2f2;
+    font-size: 18px; cursor: pointer; padding: 6px; line-height: 1;
+    margin-left: auto;
+    margin-right: 4px;
+}
 
 #nav-drawer {
     display: none;
@@ -52,6 +58,33 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 }
 .acc-item:hover { background: #3e3e3e; }
 
+/* Search bar */
+#layer-search-bar {
+    display: none;
+    position: fixed; top: 48px; left: 0; right: 0;
+    background: #222; z-index: 1600;
+    padding: 10px 12px;
+    border-bottom: 1px solid #444;
+}
+#layer-search-bar input {
+    width: 100%; padding: 10px 12px; border-radius: 10px;
+    border: 1.5px solid #555; background: #333; color: #f2f2f2;
+    font-size: 15px; font-family: inherit; box-sizing: border-box; outline: none;
+}
+#layer-search-bar input::placeholder { color: #888; }
+#layer-search-bar input:focus { border-color: #d67214; }
+#layer-search-results { margin-top: 8px; max-height: 50vh; overflow-y: auto; }
+.search-result-item {
+    padding: 10px 12px; border-radius: 8px; cursor: pointer;
+    border-bottom: 0.5px solid #444; color: #f2f2f2; font-size: 14px;
+}
+.search-result-item:hover { background: #3e3e3e; }
+.search-result-type {
+    font-size: 11px; color: #d67214; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;
+}
+.search-no-results { padding: 10px 12px; color: #888; font-size: 14px; }
+
 .layer-panel {
     display: none; position: fixed; bottom: 90px; right: 10px;
     background: white; border: 1px solid #ddd; border-radius: 12px;
@@ -66,7 +99,6 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 .layer-btn span { color: #555; font-size: 9px; }
 .layer-btn.active { background: #ffe0b2; border-color: #d67214; }
 
-/* ── Add Pin button (bottom left) ── */
 #add-pin-btn {
     position: fixed; bottom: 55px; left: 10px;
     background: #d67214; border: none; border-radius: 50%;
@@ -76,7 +108,6 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
     display: flex; align-items: center; justify-content: center;
 }
 
-/* ── Add Pin chooser panel ── */
 #add-pin-chooser {
     display: none; position: fixed; bottom: 112px; left: 10px;
     background: white; border: 1px solid #ddd; border-radius: 12px;
@@ -92,18 +123,14 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 }
 #add-pin-chooser button:last-child { margin-bottom: 0; }
 #add-pin-chooser button:hover { background: #ffe0b2; border-color: #d67214; }
-#address-search-row {
-    display: none; margin-top: 6px;
-}
+#address-search-row { display: none; margin-top: 6px; }
 #address-search-row input {
     width: 100%; padding: 8px 10px; border-radius: 8px;
     border: 1.5px solid #e8e8e8; font-size: 14px;
     font-family: inherit; box-sizing: border-box; outline: none;
 }
 #address-search-row input:focus { border-color: #d67214; }
-#address-results {
-    margin-top: 4px; max-height: 160px; overflow-y: auto;
-}
+#address-results { margin-top: 4px; max-height: 160px; overflow-y: auto; }
 #address-results div {
     padding: 8px 10px; font-size: 13px; cursor: pointer;
     border-bottom: 0.5px solid #eee; color: #333;
@@ -140,9 +167,17 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 
 <div class="topnav" id="myTopnav">
     <a href="index.html" class="topnav-title">Home</a>
+    <button class="topnav-search-btn" onclick="toggleLayerSearch()" aria-label="Search">
+        <i class="fa fa-search"></i>
+    </button>
     <button class="topnav-hamburger" onclick="toggleDrawer()" aria-label="Menu">
         <i class="fa fa-bars"></i>
     </button>
+</div>
+
+<div id="layer-search-bar">
+    <input type="text" id="layer-search-input" placeholder="Search fossils, caves, lighthouses..." autocomplete="off">
+    <div id="layer-search-results"></div>
 </div>
 
 <div id="nav-drawer">
@@ -182,13 +217,11 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 
 <div id="map"></div>
 
-<!-- Add Pin button (bottom left) -->
 <button id="add-pin-btn" onclick="toggleAddPinChooser()" aria-label="Add Pin">+</button>
 
-<!-- Add Pin chooser panel -->
 <div id="add-pin-chooser">
     <button onclick="addPinFromGPS()"><img src="icons/addcurrentlocation.png" style="width:28px;height:28px;">Current GPS</button>
-    <button onclick="toggleAddressSearch()"> <img src="icons/addaddress.png" style="width:28px;height:28px;">Search Address</button>
+    <button onclick="toggleAddressSearch()"><img src="icons/addaddress.png" style="width:28px;height:28px;">Search Address</button>
     <button onclick="addPinFromMap()"><img src="icons/addtapmap.png" style="width:28px;height:28px;">Tap Map</button>
     <div id="address-search-row">
         <input type="text" id="address-input" placeholder="Search address or place...">
@@ -243,7 +276,7 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
     </div>
 </div>
 
-<!-- Panel toggle buttons (bottom right) -->
+<!-- Panel toggle buttons -->
 <div style="position:fixed;bottom:55px;right:10px;z-index:1001;display:flex;flex-direction:row;gap:6px;">
     <button onclick="togglePanel('explore')" style="background:white;border:1px solid #ddd;border-radius:8px;padding:6px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.2);">
         <img src="icons/explore.png" style="width:32px;height:32px;display:block;">
@@ -358,6 +391,7 @@ function toggleAddPinChooser() {
     const chooser = document.getElementById('add-pin-chooser');
     const isOpen = chooser.style.display === 'block';
     closeDrawer();
+    closeLayerSearch();
     document.getElementById('explore-panel').style.display = 'none';
     document.getElementById('travel-panel').style.display = 'none';
     chooser.style.display = isOpen ? 'none' : 'block';
@@ -391,7 +425,6 @@ function addPinFromGPS() {
 
 function addPinFromMap() {
     closeAddPinChooser();
-    // Long press is already active — just show a brief hint
     const hint = document.createElement('div');
     hint.textContent = 'Hold on the map to place your pin';
     hint.style.cssText = 'position:fixed;top:60px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.75);color:white;padding:8px 16px;border-radius:20px;font-size:13px;z-index:2000;pointer-events:none;';
@@ -403,9 +436,7 @@ function toggleAddressSearch() {
     const row = document.getElementById('address-search-row');
     const isOpen = row.style.display === 'block';
     row.style.display = isOpen ? 'none' : 'block';
-    if (!isOpen) {
-        document.getElementById('address-input').focus();
-    }
+    if (!isOpen) document.getElementById('address-input').focus();
 }
 
 let addressSearchTimer = null;
@@ -430,11 +461,9 @@ function searchAddress(q) {
                 const div = document.createElement('div');
                 div.textContent = r.display_name;
                 div.addEventListener('click', function() {
-                    const lat = parseFloat(r.lat);
-                    const lng = parseFloat(r.lon);
-                    map.setView([lat, lng], 14);
-                    pendingLat = lat.toFixed(5);
-                    pendingLng = lng.toFixed(5);
+                    map.setView([parseFloat(r.lat), parseFloat(r.lon)], 14);
+                    pendingLat = parseFloat(r.lat).toFixed(5);
+                    pendingLng = parseFloat(r.lon).toFixed(5);
                     closeAddPinChooser();
                     document.getElementById('edit-index').value = '-1';
                     document.getElementById('pin-form').style.display = 'block';
@@ -449,12 +478,90 @@ function searchAddress(q) {
         });
 }
 
+/* ── Layer search ── */
+function toggleLayerSearch() {
+    const bar = document.getElementById('layer-search-bar');
+    const isOpen = bar.style.display === 'block';
+    closeDrawer();
+    closeAddPinChooser();
+    document.getElementById('explore-panel').style.display = 'none';
+    document.getElementById('travel-panel').style.display = 'none';
+    bar.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) {
+        document.getElementById('layer-search-input').focus();
+        document.getElementById('layer-search-results').innerHTML = '';
+    }
+}
+
+function closeLayerSearch() {
+    document.getElementById('layer-search-bar').style.display = 'none';
+    document.getElementById('layer-search-input').value = '';
+    document.getElementById('layer-search-results').innerHTML = '';
+}
+
+function buildSearchIndex() {
+    const index = [];
+    const sources = [
+        { data: typeof fossilsData !== 'undefined' ? fossilsData : null, layer: 'Fossils & Geology' },
+        { data: typeof cavesData !== 'undefined' ? cavesData : null, layer: 'Caves' },
+        { data: typeof lighthouseData !== 'undefined' ? lighthouseData : null, layer: 'Lighthouses' },
+        { data: typeof aboriginalData !== 'undefined' ? aboriginalData : null, layer: 'Aboriginal Sites' },
+    ];
+    sources.forEach(function(src) {
+        if (!src.data || !src.data.features) return;
+        src.data.features.forEach(function(f) {
+            const p = f.properties;
+            const coords = f.geometry.coordinates;
+            index.push({
+                name: p.name || '',
+                type: p.type || src.layer,
+                layer: src.layer,
+                comment: p.comment || p.significance || p.remarks || '',
+                location: p.location || '',
+                lat: coords[1],
+                lng: coords[0]
+            });
+        });
+    });
+    return index;
+}
+
 /* ── Close everything when tapping the map ── */
 document.getElementById('map').addEventListener('click', function() {
     document.getElementById('explore-panel').style.display = 'none';
     document.getElementById('travel-panel').style.display = 'none';
     closeDrawer();
     closeAddPinChooser();
+    closeLayerSearch();
+});
+
+/* ── Search input — attached after all functions defined ── */
+document.getElementById('layer-search-input').addEventListener('input', function() {
+    const q = this.value.trim().toLowerCase();
+    const results = document.getElementById('layer-search-results');
+    if (q.length < 2) { results.innerHTML = ''; return; }
+    const index = buildSearchIndex();
+    const matches = index.filter(function(item) {
+        return item.name.toLowerCase().includes(q) ||
+               item.comment.toLowerCase().includes(q) ||
+               item.type.toLowerCase().includes(q) ||
+               item.location.toLowerCase().includes(q);
+    }).slice(0, 10);
+    results.innerHTML = '';
+    if (!matches.length) {
+        results.innerHTML = '<div class="search-no-results">No results — toggle a layer on first</div>';
+        return;
+    }
+    matches.forEach(function(item) {
+        const div = document.createElement('div');
+        div.className = 'search-result-item';
+        div.innerHTML = '<div class="search-result-type">' + item.layer + '</div><div>' + item.name + '</div>';
+        div.addEventListener('click', function() {
+            map.flyTo([item.lat, item.lng], 13, { duration: 1.2 });
+            closeLayerSearch();
+        });
+        results.appendChild(div);
+    });
 });
 
 </script>

@@ -7,15 +7,15 @@ const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
     attribution: '© OpenStreetMap contributors'
 });
 
-const stadiaOutdoors = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}@2x.png', {
+const stadiaOutdoors = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}@2x.png?api_key=86ff4306-49d2-4ba6-a5b2-eaf6d97ba472', {
     attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors'
 });
 
-const stadiaSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}@2x.jpg', {
+const stadiaSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}@2x.jpg?api_key=86ff4306-49d2-4ba6-a5b2-eaf6d97ba472', {
     attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors'
 });
 
-const stadiaDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}@2x.png', {
+const stadiaDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}@2x.png?api_key=86ff4306-49d2-4ba6-a5b2-eaf6d97ba472', {
     attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors'
 });
 
