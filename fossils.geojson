@@ -32,7 +32,7 @@
         "name": "Coalseam Riverbed Scramble",
         "location": "Coalseam Conservation Park, Irwin River Bank",
         "type": "Hands-on Permian Sifting",
-        "access": "2WD — gravel access",
+        "access": "2WD \u2014 gravel access",
         "comment": "Walk right down onto the dry rocky riverbank. Flip over individual river stones to find 250-million-year-old brachiopod and marine bivalve imprints. Leave your finds on the bank for the next traveller!",
         "color": "#c8860a"
       }
@@ -50,7 +50,7 @@
         "name": "Eyre Highway Limestone Road-Cuts",
         "location": "Nullarbor Plain, between Balladonia and Madura",
         "type": "Miocene Marine Shells",
-        "access": "2WD — highway rest areas",
+        "access": "2WD \u2014 highway rest areas",
         "comment": "Pull into major highway rest areas and inspect the rubble piles blasted from vertical limestone road-cut walls. Hundreds of sea shell casts, fossilised echinoids and bryozoans sit loose on the surface. Miner's Right required to collect.",
         "color": "#c8860a"
       }
@@ -65,10 +65,10 @@
         ]
       },
       "properties": {
-        "name": "Fossil Picnic Area — Coalseam",
+        "name": "Fossil Picnic Area \u2014 Coalseam",
         "location": "Coalseam Conservation Park, Irwin River Bank",
         "type": "Permian Marine Fossils",
-        "access": "2WD — gravel roads",
+        "access": "2WD \u2014 gravel roads",
         "comment": "Walk down onto the dry riverbed next to the picnic tables. Thousands of 250-million-year-old fossilised marine shells exposed across the surface of the stones.",
         "color": "#c8860a"
       }
@@ -104,7 +104,7 @@
         "name": "Gantheaume Beach Low Tide Pools",
         "location": "Broome, Kimberley Coast",
         "type": "Intertidal Rock Pool Scramble",
-        "access": "2WD — 4WD on sand",
+        "access": "2WD \u2014 4WD on sand",
         "comment": "Massive tidal changes expose complex rock pools along the red pindan cliffs. Sandy pockets inside low-tide rock pools reveal tropical species like snakehead and ring-top cowries.",
         "color": "#1a7abf"
       }
@@ -140,7 +140,7 @@
         "name": "Gascoyne River Gravel Bars",
         "location": "Gascoyne Junction area, dry riverbed sections",
         "type": "Permian Crinoid Stems and Brachiopods",
-        "access": "2WD — dry season only",
+        "access": "2WD \u2014 dry season only",
         "comment": "Walk the wide dry pebble and gravel curves of the riverbed. Flip over dark heavy siltstones to find detailed marine imprints including crinoid stems, spiriferid brachiopods and solitary corals. Miner's Right required.",
         "color": "#c8860a"
       }
@@ -158,7 +158,7 @@
         "name": "Gingin Chalk Exposure Areas",
         "location": "Gingin Region",
         "type": "Cretaceous Chalk Matrix",
-        "access": "2WD — landowner permission required",
+        "access": "2WD \u2014 landowner permission required",
         "comment": "Famous zone for fossilised marine life and shark teeth. Requires contacting local managers or landowners before accessing the chalk faces. Miner's Right and landowner consent needed.",
         "color": "#c8860a"
       }
@@ -177,7 +177,7 @@
         "location": "Green Head, Mid-West Coast",
         "type": "Specimen Shell Sifting",
         "access": "2WD",
-        "comment": "One specific bay gets choked with trillions of tiny pristine pure-white shells. Collectors nickname them 'white rice' — almost identical in size and perfectly preserved.",
+        "comment": "One specific bay gets choked with trillions of tiny pristine pure-white shells. Collectors nickname them 'white rice' \u2014 almost identical in size and perfectly preserved.",
         "color": "#1a7abf"
       }
     },
@@ -193,7 +193,7 @@
       "properties": {
         "name": "Hamelin Pool Stromatolites",
         "location": "Shark Bay World Heritage Area",
-        "type": "Living Fossils — Microbialites",
+        "type": "Living Fossils \u2014 Microbialites",
         "access": "2WD",
         "comment": "Active living fossils representing life on Earth from 3.5 billion years ago. Short walk to the old quarry and shoreline to see them in the shallow brine. One of the most significant fossil sites on Earth.",
         "color": "#c8860a"
@@ -228,9 +228,9 @@
       },
       "properties": {
         "name": "Minim Cove Fossil Bank",
-        "location": "Mosman Park, Perth Metro — Swan River",
+        "location": "Mosman Park, Perth Metro \u2014 Swan River",
         "type": "Pleistocene Limestone Shell Hunt",
-        "access": "2WD — metropolitan",
+        "access": "2WD \u2014 metropolitan",
         "comment": "Secret hands-on spot right in Perth's suburbs. Run your hands along rocky limestone cliffs at the river's edge to spot thousands of ancient prehistoric bivalves, gastropods, and fossilised weevil cocoons.",
         "color": "#c8860a"
       }
@@ -247,9 +247,9 @@
       "properties": {
         "name": "Norseman Public Fossicking Area",
         "location": "Norseman Region, 10 km west of townsite",
-        "type": "Ancient Geologic Fossicking — Agate and Chert",
+        "type": "Ancient Geologic Fossicking \u2014 Agate and Chert",
         "access": "2WD",
-        "comment": "The only official legal public fossicking area on a roadside layout in WA. Walk the open red dirt, kick over stones, search the gravel — and you are allowed to keep what you find here!",
+        "comment": "The only official legal public fossicking area on a roadside layout in WA. Walk the open red dirt, kick over stones, search the gravel \u2014 and you are allowed to keep what you find here!",
         "color": "#c8860a"
       }
     },
@@ -303,7 +303,7 @@
         "location": "Cape Range National Park, Exmouth",
         "type": "Coral Coast Specimen Hunting",
         "access": "2WD",
-        "comment": "Heavy drift current pushes unique deep-sea treasures onto the tide lines. Search for olive shells, heavy-spined murex, and moon snails. Ningaloo is a marine park — look, photograph, and leave them for the ecosystem.",
+        "comment": "Heavy drift current pushes unique deep-sea treasures onto the tide lines. Search for olive shells, heavy-spined murex, and moon snails. Ningaloo is a marine park \u2014 look, photograph, and leave them for the ecosystem.",
         "color": "#1a7abf"
       }
     },
@@ -338,7 +338,7 @@
         "name": "Eighty Mile Beach",
         "location": "Between Port Hedland and Broome",
         "type": "The Ultimate Beachcomber's Paradise",
-        "access": "2WD — via caravan park track",
+        "access": "2WD \u2014 via caravan park track",
         "comment": "Widely regarded as one of the best shell collecting beaches in the world. Massive 9-metre tides clear the sand flats twice daily, leaving thousands of pristine giant shells. Famous for intact Mother-of-Pearl, sand dollars, and massive bailer shells.",
         "color": "#1a7abf"
       }
@@ -353,10 +353,10 @@
         ]
       },
       "properties": {
-        "name": "Molecap Quarry — Gingin Chalk",
+        "name": "Molecap Quarry \u2014 Gingin Chalk",
         "location": "Off Cockram Road, 1 km from Gingin town centre",
         "type": "Cretaceous Shark Teeth, Mosasaur and Plesiosaur Bones",
-        "access": "2WD — private wheat farm, historically tolerated via low sheep gate off Cockram Road. Landowner permission recommended.",
+        "access": "2WD \u2014 private wheat farm, historically tolerated via low sheep gate off Cockram Road. Landowner permission recommended.",
         "comment": "One of WA's most significant fossil sites. The Molecap Greensand yields shark teeth, mosasaur arm bones, plesiosaur vertebrae up to 120mm, ichthyosaur vertebrae, and the only dinosaur bone found in WA (theropod toe bone, 1992). Chalk layer above contains ammonites, giant clam Inoceramus, crinoids and brachiopods. 80-85 million years old. Miner's Right required.",
         "color": "#c8860a"
       }
@@ -375,7 +375,7 @@
         "location": "Contos Beach, south of Margaret River",
         "type": "Beach Garnet Collecting",
         "access": "2WD",
-        "comment": "Garnets found in the rocky limestone platforms and sand at low tide. Personal find — collected quite a few here. Best searched at low tide around the rocky outcrops.",
+        "comment": "Garnets found in the rocky limestone platforms and sand at low tide. Personal find \u2014 collected quite a few here. Best searched at low tide around the rocky outcrops.",
         "color": "#b03060"
       }
     },
@@ -392,7 +392,7 @@
         "name": "Cancanning Meteorite Fall",
         "location": "12 km north-north-east of Gundaring, near Cancanning Hall, Wheatbelt",
         "type": "Meteorite Fall Site",
-        "access": "2WD — private farmland, viewing area only",
+        "access": "2WD \u2014 private farmland, viewing area only",
         "comment": "On April 6 1930 a fireball with loud rumbling and explosion was witnessed across the Pingelly-Cuballing district. Not found until May 1937 when F. Quinn discovered a piece on Block 14355 near Cancanning Hall. The 43x42x23cm specimen is now at the WA Museum. A rock fell from space and sat in a paddock for seven years.",
         "color": "#607080"
       }
@@ -407,9 +407,9 @@
         ]
       },
       "properties": {
-        "name": "Preston River Gold — Beelerup",
+        "name": "Preston River Gold \u2014 Beelerup",
         "location": "Preston River at Beelerup Road, near Donnybrook",
-        "type": "Alluvial Gold — Fern Vein",
+        "type": "Alluvial Gold \u2014 Fern Vein",
         "access": "2WD",
         "comment": "Very small fern vein gold reported in the Donnybrook area. Creek beds where water slows are classic gold trapping locations. The Darling Range greenstone belt geology is right for it. Miner's Right required.",
         "color": "#d4a017"
@@ -425,11 +425,11 @@
         ]
       },
       "properties": {
-        "name": "Volutoconus hargreavesi — NW Cape Deep Water",
+        "name": "Volutoconus hargreavesi \u2014 NW Cape Deep Water",
         "location": "North West Cape, Exmouth Region",
-        "type": "Rare Collector Shell — Volutidae",
-        "access": "Beach access 2WD — dead-washed specimens only",
-        "comment": "One of WA's rarest volutes. Lives at 100–160m depth and almost never found alive — look for dead-washed specimens after storms on NW Cape beaches. Stunning elongated shape with fine brown banding on cream. WA endemic. WAM specimens collected 2001. Serious collector's shell.",
+        "type": "Rare Collector Shell \u2014 Volutidae",
+        "access": "Beach access 2WD \u2014 dead-washed specimens only",
+        "comment": "One of WA's rarest volutes. Lives at 100\u2013160m depth and almost never found alive \u2014 look for dead-washed specimens after storms on NW Cape beaches. Stunning elongated shape with fine brown banding on cream. WA endemic. WAM specimens collected 2001. Serious collector's shell.",
         "color": "#1a7abf",
         "wam_url": "https://museum.wa.gov.au/catalogues/digitised-types/volutoconus-hargreavesi-sp-nov"
       }
@@ -444,11 +444,11 @@
         ]
       },
       "properties": {
-        "name": "Amoria diamantina — NW Cape Offshore",
+        "name": "Amoria diamantina \u2014 NW Cape Offshore",
         "location": "West of North West Cape, Exmouth Region",
-        "type": "Rare Collector Shell — Volutidae",
-        "access": "Beach access 2WD — dead-washed specimens only",
-        "comment": "Named after the Diamantina Trench. WA endemic and genuinely rare — lives at 68m depth. Gorgeous flame-pattern volute in orange and cream. WAM specimens dredged 1964–1972. Almost never turns up on beaches; a storm-washed find would be exceptional.",
+        "type": "Rare Collector Shell \u2014 Volutidae",
+        "access": "Beach access 2WD \u2014 dead-washed specimens only",
+        "comment": "Named after the Diamantina Trench. WA endemic and genuinely rare \u2014 lives at 68m depth. Gorgeous flame-pattern volute in orange and cream. WAM specimens dredged 1964\u20131972. Almost never turns up on beaches; a storm-washed find would be exceptional.",
         "color": "#1a7abf",
         "wam_url": "https://museum.wa.gov.au/catalogues/digitised-types/amoria-diamantina"
       }
@@ -463,10 +463,10 @@
         ]
       },
       "properties": {
-        "name": "Amoria rinkensi — NW Shelf Deep Slope",
+        "name": "Amoria rinkensi \u2014 NW Shelf Deep Slope",
         "location": "North West Shelf Slope, off Exmouth",
-        "type": "Rare Collector Shell — Volutidae",
-        "access": "Beach access 2WD — exceptionally rare dead-washed find",
+        "type": "Rare Collector Shell \u2014 Volutidae",
+        "access": "Beach access 2WD \u2014 exceptionally rare dead-washed find",
         "comment": "Deep-water rarity found at 220m on the NW Shelf slope. Barely ever surfaces. WAM specimen collected 2002. If you find one on a beach it has travelled a very long way. Small, smooth, with delicate patterning.",
         "color": "#1a7abf"
       }
@@ -481,11 +481,11 @@
         ]
       },
       "properties": {
-        "name": "Cymbiola nivosa — Vlamingh Head Beaches",
+        "name": "Cymbiola nivosa \u2014 Vlamingh Head Beaches",
         "location": "North West Cape, Vlamingh Head to Learmonth",
-        "type": "Iconic Collector Shell — Volutidae",
-        "access": "2WD — beach walk",
-        "comment": "The Snowy Volute — WA's most iconic large volute. Creamy white with bold dark brown spots. Multiple WAM records from Vlamingh Head, Point Cloates, and Learmonth beaches 1964–1984. A big, beautiful shell worth stopping for. Look along high-tide wrack lines after storms.",
+        "type": "Iconic Collector Shell \u2014 Volutidae",
+        "access": "2WD \u2014 beach walk",
+        "comment": "The Snowy Volute \u2014 WA's most iconic large volute. Creamy white with bold dark brown spots. Multiple WAM records from Vlamingh Head, Point Cloates, and Learmonth beaches 1964\u20131984. A big, beautiful shell worth stopping for. Look along high-tide wrack lines after storms.",
         "color": "#1a7abf"
       }
     },
@@ -499,11 +499,11 @@
         ]
       },
       "properties": {
-        "name": "Nannamoria capricornea — Point Cloates Offshore",
+        "name": "Nannamoria capricornea \u2014 Point Cloates Offshore",
         "location": "West of Point Cloates, Ningaloo",
-        "type": "Rare Collector Shell — Volutidae",
-        "access": "Beach access 2WD — dead-washed specimens only",
-        "comment": "Small, deep-water WA endemic volute named for the Capricorn region. Found at 71m depth. Rare and seldom seen. WAM specimens dredged 1964–1972 west of Point Cloates. A quiet little rarity.",
+        "type": "Rare Collector Shell \u2014 Volutidae",
+        "access": "Beach access 2WD \u2014 dead-washed specimens only",
+        "comment": "Small, deep-water WA endemic volute named for the Capricorn region. Found at 71m depth. Rare and seldom seen. WAM specimens dredged 1964\u20131972 west of Point Cloates. A quiet little rarity.",
         "color": "#1a7abf"
       }
     },
@@ -517,10 +517,10 @@
         ]
       },
       "properties": {
-        "name": "Amoria praetexta — Bundegi Reef",
+        "name": "Amoria praetexta \u2014 Bundegi Reef",
         "location": "Exmouth Gulf, Bundegi Reef",
-        "type": "Collector Shell — Volutidae",
-        "access": "2WD — Bundegi boat ramp area",
+        "type": "Collector Shell \u2014 Volutidae",
+        "access": "2WD \u2014 Bundegi boat ramp area",
         "comment": "A lovely smaller volute found at Bundegi Reef in 1969. Less rare than its Volutidae cousins but a genuine find. Cream with fine brown axial lines. Look along the reef rubble and wrack line at low tide.",
         "color": "#1a7abf"
       }
@@ -535,11 +535,11 @@
         ]
       },
       "properties": {
-        "name": "Gloripallium pallium — Muiron Islands",
+        "name": "Gloripallium pallium \u2014 Muiron Islands",
         "location": "South Muiron Island, Exmouth Gulf",
-        "type": "Spectacular Scallop — Pectinidae",
+        "type": "Spectacular Scallop \u2014 Pectinidae",
         "access": "Boat access from Tantabiddi or Exmouth",
-        "comment": "The Royal Cloak Scallop. Deep crimson and white fan shell — one of the most striking scallops in WA waters. WAM specimens from South Muiron Island reefs. Found on rubble and coral at depth; dead-washed valves occasionally on beaches after rough weather.",
+        "comment": "The Royal Cloak Scallop. Deep crimson and white fan shell \u2014 one of the most striking scallops in WA waters. WAM specimens from South Muiron Island reefs. Found on rubble and coral at depth; dead-washed valves occasionally on beaches after rough weather.",
         "color": "#1a7abf"
       }
     },
@@ -553,11 +553,11 @@
         ]
       },
       "properties": {
-        "name": "Mimachlamys gloriosa — North West Cape Reef",
+        "name": "Mimachlamys gloriosa \u2014 North West Cape Reef",
         "location": "North West Cape, reef areas",
-        "type": "Spectacular Scallop — Pectinidae",
-        "access": "2WD to cape — snorkel or low-tide reef walk",
-        "comment": "The Glorious Scallop. The name is not an exaggeration — richly ribbed and coloured in reds, purples, and whites. WAM specimen from NW Cape. One of WA's most beautiful bivalves. Look on reef rubble or in shallow rocky areas.",
+        "type": "Spectacular Scallop \u2014 Pectinidae",
+        "access": "2WD to cape \u2014 snorkel or low-tide reef walk",
+        "comment": "The Glorious Scallop. The name is not an exaggeration \u2014 richly ribbed and coloured in reds, purples, and whites. WAM specimen from NW Cape. One of WA's most beautiful bivalves. Look on reef rubble or in shallow rocky areas.",
         "color": "#1a7abf"
       }
     },
@@ -571,11 +571,11 @@
         ]
       },
       "properties": {
-        "name": "Excellichlamys spectabilis — South Muiron Island",
+        "name": "Excellichlamys spectabilis \u2014 South Muiron Island",
         "location": "Exmouth Gulf, South Muiron Island",
-        "type": "Spectacular Scallop — Pectinidae",
+        "type": "Spectacular Scallop \u2014 Pectinidae",
         "access": "Boat access from Exmouth",
-        "comment": "The Spectacular Scallop — and yes, it earns that name. Large, glossy, strongly ribbed with vivid colour variation from orange to purple. WAM specimen from South Muiron Island. A serious find for any shell collector.",
+        "comment": "The Spectacular Scallop \u2014 and yes, it earns that name. Large, glossy, strongly ribbed with vivid colour variation from orange to purple. WAM specimen from South Muiron Island. A serious find for any shell collector.",
         "color": "#1a7abf"
       }
     },
@@ -589,11 +589,11 @@
         ]
       },
       "properties": {
-        "name": "Cymbiola irvinae — Irwin's Volute Range",
-        "location": "SW WA Coast — Kalbarri to Augusta",
-        "type": "Rare Collector Shell — Volutidae",
-        "access": "2WD — beach walk at low tide",
-        "comment": "Irwin's Volute — a WA endemic and genuinely rare find. GBIF records span Kalbarri south through Cervantes, Rottnest, Fremantle and the south coast to Augusta. One specimen found at 54m depth off Fremantle; most records are beach-washed. Cream with fine brown flame markings, medium-large shell. Named for Bruce Wilson's colleague. If you find one on a SW WA beach you've done well. Pin placed at Kalbarri — the northernmost confirmed record.",
+        "name": "Cymbiola irvinae \u2014 Irwin's Volute Range",
+        "location": "SW WA Coast \u2014 Kalbarri to Augusta",
+        "type": "Rare Collector Shell \u2014 Volutidae",
+        "access": "2WD \u2014 beach walk at low tide",
+        "comment": "Irwin's Volute \u2014 a WA endemic and genuinely rare find. GBIF records span Kalbarri south through Cervantes, Rottnest, Fremantle and the south coast to Augusta. One specimen found at 54m depth off Fremantle; most records are beach-washed. Cream with fine brown flame markings, medium-large shell. Named for Bruce Wilson's colleague. If you find one on a SW WA beach you've done well. Pin placed at Kalbarri \u2014 the northernmost confirmed record.",
         "color": "#1a7abf"
       }
     },
@@ -607,11 +607,11 @@
         ]
       },
       "properties": {
-        "name": "Melo miltonis — Milton's Volute Beaches",
-        "location": "SW WA Coast — Lancelin to Augusta",
-        "type": "Iconic Collector Shell — Volutidae",
-        "access": "2WD — beach walk",
-        "comment": "Milton's Volute — WA's great southern giant. One of the largest gastropods in WA waters, creamy orange with bold brown zigzag markings. Recent iNaturalist records (2025–2026) place it along the entire SW coast from Lancelin through Perth beaches, Mandurah, Busselton and down to Augusta and Esperance. Look along high-tide wrack lines after winter storms — these wash up whole. Bigger and heavier than you expect. Pin placed near Quinns Rocks where multiple 2026 records cluster.",
+        "name": "Melo miltonis \u2014 Milton's Volute Beaches",
+        "location": "SW WA Coast \u2014 Lancelin to Augusta",
+        "type": "Iconic Collector Shell \u2014 Volutidae",
+        "access": "2WD \u2014 beach walk",
+        "comment": "Milton's Volute \u2014 WA's great southern giant. One of the largest gastropods in WA waters, creamy orange with bold brown zigzag markings. Recent iNaturalist records (2025\u20132026) place it along the entire SW coast from Lancelin through Perth beaches, Mandurah, Busselton and down to Augusta and Esperance. Look along high-tide wrack lines after winter storms \u2014 these wash up whole. Bigger and heavier than you expect. Pin placed near Quinns Rocks where multiple 2026 records cluster.",
         "color": "#1a7abf"
       }
     },
@@ -625,11 +625,11 @@
         ]
       },
       "properties": {
-        "name": "Zoila friendii — Carnac Island & Cockburn Sound",
+        "name": "Zoila friendii \u2014 Carnac Island & Cockburn Sound",
         "location": "Woodman Point, Cockburn Sound, south of Fremantle",
-        "type": "Iconic Collector Shell — Cypraeidae",
-        "access": "2WD to Woodman Point — boat to Carnac Island",
-        "comment": "Friend's Cowrie — WA's most celebrated cowrie and a serious collector's shell. Large, heavy, deep chocolate brown above with a pure white base and fine teeth. WA endemic. Cockburn Sound and Carnac Island are the most consistently recorded locations going back to 1962. Found at 1–15m depth on reef and rubble. Dead-washed specimens occasionally on nearby beaches after storms. WAM records span 1962–2008.",
+        "type": "Iconic Collector Shell \u2014 Cypraeidae",
+        "access": "2WD to Woodman Point \u2014 boat to Carnac Island",
+        "comment": "Friend's Cowrie \u2014 WA's most celebrated cowrie and a serious collector's shell. Large, heavy, deep chocolate brown above with a pure white base and fine teeth. WA endemic. Cockburn Sound and Carnac Island are the most consistently recorded locations going back to 1962. Found at 1\u201315m depth on reef and rubble. Dead-washed specimens occasionally on nearby beaches after storms. WAM records span 1962\u20132008.",
         "color": "#1a7abf",
         "wam_url": "https://museum.wa.gov.au/catalogues/digitised-types/zoila-friendii-jeaniana"
       }
@@ -644,11 +644,11 @@
         ]
       },
       "properties": {
-        "name": "Zoila friendii — Geographe Bay",
+        "name": "Zoila friendii \u2014 Geographe Bay",
         "location": "Geographe Bay, between Busselton and Dunsborough",
-        "type": "Iconic Collector Shell — Cypraeidae",
+        "type": "Iconic Collector Shell \u2014 Cypraeidae",
         "access": "2WD",
-        "comment": "Friend's Cowrie hotspot — more records from Geographe Bay than almost anywhere else in WA. WAM specimens collected 1960–1989 along this stretch. Found at 6m depth on reef. Look along the reef edges between Dunsborough and Busselton. Recent iNaturalist sightings confirm it's still here. One of the best spots on the SW coast to find this species.",
+        "comment": "Friend's Cowrie hotspot \u2014 more records from Geographe Bay than almost anywhere else in WA. WAM specimens collected 1960\u20131989 along this stretch. Found at 6m depth on reef. Look along the reef edges between Dunsborough and Busselton. Recent iNaturalist sightings confirm it's still here. One of the best spots on the SW coast to find this species.",
         "color": "#1a7abf",
         "wam_url": "https://museum.wa.gov.au/catalogues/digitised-types/zoila-friendii-jeaniana"
       }
@@ -663,11 +663,11 @@
         ]
       },
       "properties": {
-        "name": "Zoila friendii — Albany Reefs",
+        "name": "Zoila friendii \u2014 Albany Reefs",
         "location": "Albany, Great Southern Coast",
-        "type": "Iconic Collector Shell — Cypraeidae",
-        "access": "2WD — boat or dive access to reefs",
-        "comment": "Friend's Cowrie at the southern end of its range. Multiple WAM records from Albany 1983–1999 at 13–40m depth — these are deeper water finds, mostly dredged or diver-collected. Dead-washed valves occasionally on beaches after heavy Southern Ocean swells. Worth checking reef rubble and kelp beds around King George Sound.",
+        "type": "Iconic Collector Shell \u2014 Cypraeidae",
+        "access": "2WD \u2014 boat or dive access to reefs",
+        "comment": "Friend's Cowrie at the southern end of its range. Multiple WAM records from Albany 1983\u20131999 at 13\u201340m depth \u2014 these are deeper water finds, mostly dredged or diver-collected. Dead-washed valves occasionally on beaches after heavy Southern Ocean swells. Worth checking reef rubble and kelp beds around King George Sound.",
         "color": "#1a7abf",
         "wam_url": "https://museum.wa.gov.au/catalogues/digitised-types/zoila-friendii-jeaniana"
       }
@@ -682,11 +682,11 @@
         ]
       },
       "properties": {
-        "name": "Zoila friendii — Esperance Reefs",
+        "name": "Zoila friendii \u2014 Esperance Reefs",
         "location": "Esperance, South Coast",
-        "type": "Iconic Collector Shell — Cypraeidae",
-        "access": "2WD — boat or dive access",
-        "comment": "Friend's Cowrie at the eastern edge of its WA range. WAM records from Esperance 1995–2001 at 6.5–37.5m depth. The Recherche Archipelago reefs offshore from Esperance are rich hunting ground. A find here would be at the limit of the species' known distribution — worth noting if you find one.",
+        "type": "Iconic Collector Shell \u2014 Cypraeidae",
+        "access": "2WD \u2014 boat or dive access",
+        "comment": "Friend's Cowrie at the eastern edge of its WA range. WAM records from Esperance 1995\u20132001 at 6.5\u201337.5m depth. The Recherche Archipelago reefs offshore from Esperance are rich hunting ground. A find here would be at the limit of the species' known distribution \u2014 worth noting if you find one.",
         "color": "#1a7abf",
         "wam_url": "https://museum.wa.gov.au/catalogues/digitised-types/zoila-friendii-jeaniana"
       }
@@ -701,11 +701,11 @@
         ]
       },
       "properties": {
-        "name": "Campanile symbolicum — Rottnest Island",
+        "name": "Campanile symbolicum \u2014 Rottnest Island",
         "location": "Rottnest Island & Garden Island, off Fremantle",
-        "type": "Living Fossil Shell — Campanilidae",
-        "access": "Ferry to Rottnest — snorkel or low tide reef walk",
-        "comment": "The Giant Campanile — a living fossil and WA's most iconic shell. This species was thought extinct for 40 million years until found alive off WA in the 1890s. A tall, heavy, ribbed gastropod up to 30cm. Rottnest Island is one of the most consistently recorded locations — Armstrong Bay, The Grottos, Thomson Bay, Parker Point. Found at 4–10m depth on seagrass beds. Dead-washed shells occasionally on beaches. Records span 1912 to 2026 — it's still here.",
+        "type": "Living Fossil Shell \u2014 Campanilidae",
+        "access": "Ferry to Rottnest \u2014 snorkel or low tide reef walk",
+        "comment": "The Giant Campanile \u2014 a living fossil and WA's most iconic shell. This species was thought extinct for 40 million years until found alive off WA in the 1890s. A tall, heavy, ribbed gastropod up to 30cm. Rottnest Island is one of the most consistently recorded locations \u2014 Armstrong Bay, The Grottos, Thomson Bay, Parker Point. Found at 4\u201310m depth on seagrass beds. Dead-washed shells occasionally on beaches. Records span 1912 to 2026 \u2014 it's still here.",
         "color": "#1a7abf"
       }
     },
@@ -719,11 +719,11 @@
         ]
       },
       "properties": {
-        "name": "Campanile symbolicum — Cape Naturaliste to Yallingup",
+        "name": "Campanile symbolicum \u2014 Cape Naturaliste to Yallingup",
         "location": "Bunker Bay, Cape Naturaliste, Yallingup, Dunsborough",
-        "type": "Living Fossil Shell — Campanilidae",
-        "access": "2WD — beach walk and snorkel",
-        "comment": "One of the densest clusters of Campanile records on the WA coast. WAM specimens from Bunker Bay, Cape Naturaliste, Yallingup and Dunsborough going back to 1954. Found in seagrass at 6–15m depth. Dead shells wash onto beaches along this stretch regularly. This is Margaret River wine country with a living fossil in the water — not a bad combination.",
+        "type": "Living Fossil Shell \u2014 Campanilidae",
+        "access": "2WD \u2014 beach walk and snorkel",
+        "comment": "One of the densest clusters of Campanile records on the WA coast. WAM specimens from Bunker Bay, Cape Naturaliste, Yallingup and Dunsborough going back to 1954. Found in seagrass at 6\u201315m depth. Dead shells wash onto beaches along this stretch regularly. This is Margaret River wine country with a living fossil in the water \u2014 not a bad combination.",
         "color": "#1a7abf"
       }
     },
@@ -737,11 +737,11 @@
         ]
       },
       "properties": {
-        "name": "Campanile symbolicum — Albany Coast",
+        "name": "Campanile symbolicum \u2014 Albany Coast",
         "location": "Albany, King George Sound and surrounds",
-        "type": "Living Fossil Shell — Campanilidae",
-        "access": "2WD — boat or dive access",
-        "comment": "Albany is a Campanile hotspot — multiple WAM records from 1910 onwards and iNaturalist sightings right through to 2026. Found at 8.5m depth in King George Sound. Dead shells wash up on local beaches after Southern Ocean swells. The sheer span of records here — over 100 years — says something about how consistently this species occupies this stretch of coast.",
+        "type": "Living Fossil Shell \u2014 Campanilidae",
+        "access": "2WD \u2014 boat or dive access",
+        "comment": "Albany is a Campanile hotspot \u2014 multiple WAM records from 1910 onwards and iNaturalist sightings right through to 2026. Found at 8.5m depth in King George Sound. Dead shells wash up on local beaches after Southern Ocean swells. The sheer span of records here \u2014 over 100 years \u2014 says something about how consistently this species occupies this stretch of coast.",
         "color": "#1a7abf"
       }
     },
@@ -755,9 +755,9 @@
         ]
       },
       "properties": {
-        "name": "Campanile symbolicum — Jurien Bay to Green Head",
+        "name": "Campanile symbolicum \u2014 Jurien Bay to Green Head",
         "location": "Mid-West Coast, Jurien Bay region",
-        "type": "Living Fossil Shell — Campanilidae",
+        "type": "Living Fossil Shell \u2014 Campanilidae",
         "access": "2WD",
         "comment": "Northern extent of Campanile's SW WA range. Records from Green Head, Jurien Bay and Escape Island going back to 1958 with recent sightings to 2025. Beach-washed shells found along this limestone coast. Worth checking the wrack line on beaches between Green Head and Jurien after winter swells.",
         "color": "#1a7abf"
@@ -773,11 +773,11 @@
         ]
       },
       "properties": {
-        "name": "Altivasum flindersi — Cape Leeuwin Deep Water",
+        "name": "Altivasum flindersi \u2014 Cape Leeuwin Deep Water",
         "location": "Cape Leeuwin to Geographe Bay, SW Corner WA",
-        "type": "Rare Deep Water Shell — Volutidae",
-        "access": "2WD — dead-washed specimens only",
-        "comment": "Flinders' Vase — one of WA's most extraordinary deep water shells. A tall, elegant vase-shaped volute with fine sculpting, found at depth off the SW corner of WA. Records from Cape Leeuwin, Geographe Bay, Mandurah and Esperance — all dead-washed or dredged. Lives too deep to find alive. If one washes up on a beach near Cape Leeuwin or Augusta after a big Southern Ocean swell, you have found something genuinely rare. Related species Altivasum hedleyi also recorded in this area.",
+        "type": "Rare Deep Water Shell \u2014 Volutidae",
+        "access": "2WD \u2014 dead-washed specimens only",
+        "comment": "Flinders' Vase \u2014 one of WA's most extraordinary deep water shells. A tall, elegant vase-shaped volute with fine sculpting, found at depth off the SW corner of WA. Records from Cape Leeuwin, Geographe Bay, Mandurah and Esperance \u2014 all dead-washed or dredged. Lives too deep to find alive. If one washes up on a beach near Cape Leeuwin or Augusta after a big Southern Ocean swell, you have found something genuinely rare. Related species Altivasum hedleyi also recorded in this area.",
         "color": "#1a7abf"
       }
     },
@@ -791,12 +791,282 @@
         ]
       },
       "properties": {
-        "name": "Argonauta argo — Paper Nautilus Beaches",
-        "location": "SW WA Coast — Augusta to Albany, also Eighty Mile Beach",
-        "type": "Pelagic Treasure — Argonautidae",
-        "access": "2WD — beach walk after storms",
-        "comment": "The Paper Nautilus — not a true nautilus but an octopus whose female secretes a breathtakingly fragile white paper-thin egg case to carry her young. One of the most beautiful accidental finds on any beach. WA records run from Eighty Mile Beach in the north all the way to Albany — but the SW corner around Augusta, Cape Leeuwin and Denmark sees the most consistent strandings after Southern Ocean swells. Translucent white, ribbed, impossibly delicate. Walk slowly and look carefully — they shatter easily. Pin placed near Augusta where multiple records cluster.",
+        "name": "Argonauta argo \u2014 Paper Nautilus Beaches",
+        "location": "SW WA Coast \u2014 Augusta to Albany, also Eighty Mile Beach",
+        "type": "Pelagic Treasure \u2014 Argonautidae",
+        "access": "2WD \u2014 beach walk after storms",
+        "comment": "The Paper Nautilus \u2014 not a true nautilus but an octopus whose female secretes a breathtakingly fragile white paper-thin egg case to carry her young. One of the most beautiful accidental finds on any beach. WA records run from Eighty Mile Beach in the north all the way to Albany \u2014 but the SW corner around Augusta, Cape Leeuwin and Denmark sees the most consistent strandings after Southern Ocean swells. Translucent white, ribbed, impossibly delicate. Walk slowly and look carefully \u2014 they shatter easily. Pin placed near Augusta where multiple records cluster.",
         "color": "#1a7abf"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.655151,
+          -30.468327
+        ]
+      },
+      "properties": {
+        "name": "Yallalie Impact Structure",
+        "location": "Near Moora, Wheatbelt WA",
+        "type": "Meteorite Impact Crater",
+        "access": "2WD \u2014 dirt roads, private farmland surrounds",
+        "comment": "Suspected meteorite impact structure approximately 12km in diameter, buried beneath Cretaceous sediments. One of the largest known impact features in WA. The circular depression is visible on aerial imagery. Not a walk-in site \u2014 best appreciated from the road or via satellite map. Adds to the meteorite impact story alongside Cancanning.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.539749,
+          -29.018
+        ]
+      },
+      "properties": {
+        "name": "Fossil Cliff Member \u2014 Coalseam Conservation Park",
+        "location": "Coalseam Conservation Park, Mingenew, Mid-West WA",
+        "type": "Permian Marine Fossils \u2014 Accessible Camping Site",
+        "access": "2WD \u2014 gravel access, camping available",
+        "comment": "The Fossil Cliff Member exposed along the Irwin River contains brachiopods, crinoids and coal seams from the Permian (~250 million years ago). A plesiosaur was found nearby. Coalseam has free camping and is accessible to 2WD. Walk the riverbank at low water \u2014 fossils weather out of the cliff face onto the rocky bed. One of the most accessible Permian fossil sites in WA.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.655574,
+          -29.192488
+        ]
+      },
+      "properties": {
+        "name": "Woolaga Creek \u2014 Permian Brachiopods",
+        "location": "Woolaga Creek, Midwest WA",
+        "type": "Permian Marine Fossils",
+        "access": "Dirt track \u2014 dry season only",
+        "comment": "Permian Neospirifer brachiopod moulds exposed in creek bed sediments. Part of the same Permian marine sequence as Coalseam. Walk the dry creek bed and look for the distinctive fan-shaped brachiopod impressions in dark siltstone. Miner's Right required to collect.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.077362,
+          -30.50755
+        ]
+      },
+      "properties": {
+        "name": "Lake Thetis \u2014 Living Stromatolites",
+        "location": "Cervantes, Turquoise Coast WA",
+        "type": "Living Fossil \u2014 Stromatolites",
+        "access": "2WD \u2014 boardwalk access",
+        "comment": "One of only a handful of places on Earth where living stromatolites can be seen. These layered microbial mats are built by cyanobacteria \u2014 the same organisms that oxygenated Earth's atmosphere 2.5 billion years ago. The ones here are several thousand years old. A boardwalk makes them easy to view without disturbance. Combine with the Pinnacles \u2014 they're 30 minutes apart.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.164135,
+          -30.602626
+        ]
+      },
+      "properties": {
+        "name": "The Pinnacles \u2014 Nambung National Park",
+        "location": "Nambung National Park, Cervantes",
+        "type": "Geological Formation \u2014 Limestone Pillars",
+        "access": "2WD \u2014 sealed road into park, entry fee applies",
+        "comment": "Thousands of ancient limestone pillars rising from yellow sand \u2014 formed from marine shell carbonate cemented around plant roots during sea level changes over the last 25,000\u201330,000 years. The geology here is a direct record of past coastal environments. Go at dawn or dusk for low-angle light. One of WA's most visited natural landmarks.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.903489,
+          -31.32121
+        ]
+      },
+      "properties": {
+        "name": "Gingin Chalk \u2014 MacIntyre Gully",
+        "location": "MacIntyre Gully, Gingin Region",
+        "type": "Cretaceous Marine Fossils",
+        "access": "2WD \u2014 landowner permission required",
+        "comment": "The Gingin Chalk is one of WA's most significant Cretaceous fossil sites. MacIntyre Gully exposes white chalk beds containing Inoceramus bivalves, crinoid ossicles and \u2014 famously \u2014 mosasaur remains. A mosasaur skull was recovered here. Shark teeth also recorded. Requires contacting landowners before visiting. Miner's Right required to collect. More specific and productive than general Gingin Chalk exposures.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.911707,
+          -31.355925
+        ]
+      },
+      "properties": {
+        "name": "Molecap Hill Quarry \u2014 Theropod Dinosaur Bone",
+        "location": "Molecap Hill, near Gingin",
+        "type": "Cretaceous Dinosaur Site",
+        "access": "2WD \u2014 quarry site, access restrictions likely",
+        "comment": "A theropod dinosaur bone was recovered from this quarry site \u2014 one of very few dinosaur finds in WA. The bone came from Cretaceous sediments exposed during quarrying operations. The site is not a public collecting site but is significant as one of WA's rare dinosaur localities. Check access before visiting.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.915066,
+          -29.278099
+        ]
+      },
+      "properties": {
+        "name": "Leander Point \u2014 Pleistocene Coral Reef",
+        "location": "Port Denison (Dongara), Mid-West Coast WA",
+        "type": "Pleistocene Fossil Coral Reef",
+        "access": "2WD \u2014 foreshore access",
+        "comment": "Exposed Pleistocene coral reef approximately 120,000 years old, formed during the last major interglacial sea level highstand when sea levels were several metres above present. Fossil corals, molluscs and reef material visible in the limestone platform. A tangible record of ancient climate \u2014 the last time Earth was significantly warmer than today.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.635046,
+          -28.869619
+        ]
+      },
+      "properties": {
+        "name": "Cape Burney \u2014 Pleistocene Coral Reef",
+        "location": "Cape Burney, Greenough, Mid-West WA",
+        "type": "Pleistocene Fossil Coral Reef",
+        "access": "2WD \u2014 coastal track",
+        "comment": "Pleistocene coral reef dated 121\u2013123,000 years old, formed during the last interglacial highstand. Exposed limestone platform with fossil corals and shell material. Slightly older and better-dated than the Leander Point reef. Good companion site \u2014 both record the same ancient warm sea event from different points along the coast.",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988,
+          -31.887
+        ]
+      },
+      "properties": {
+        "name": "Madura Quarry \u2014 Roe Calcarenite Fossils",
+        "location": "16km south of Madura, Nullarbor, WA",
+        "type": "Pliocene Marine Fossils \u2014 Rich Exposure",
+        "access": "2WD \u2014 highway access, Main Roads quarry",
+        "comment": "Main Roads quarry that cut through the full thickness of the Roe Calcarenite \u2014 Pliocene age, 1.6\u20135 million years old. Exceptionally rich in well-preserved marine fossils including Campanile symbolicum, bivalves, echinoids, bryozoans and the large foraminiifer Marginopora. The quarry material was used for Eyre Highway road base as far as Cocklebiddy. Loose fossil material on the surface. Miner's Right required to collect. Source: WA Museum Roe Plains Fossil Guide (Kendrick, McNamara & Brimmell, 1997).",
+        "color": "#c8860a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.9479,
+          -17.4071
+        ]
+      },
+      "properties": {
+        "name": "Bandilngan (Windjana Gorge) National Park",
+        "type": "Devonian Reef \u2014 Fossils",
+        "color": "#c8860a",
+        "location": "Napier Range, Kimberley. 145km from Derby, 150km from Fitzroy Crossing.",
+        "access": "Unsealed Fairfield-Leopold Road. Open dry season only (April\u2013November). Entry fee applies.",
+        "comment": "Part of WA's 375-million-year-old Devonian Great Barrier Reef. The gorge is 3.5km long, up to 100m deep, cut by the Lennard River. World-class 'Classic Face' exposure shows reef, back-reef and marginal-slope deposits. Fossils include stromatoporoids, corals, nautiloids, brachiopods and armoured fish. River gravels have also yielded fossil crocodile bones and Diprotodon (giant marsupial). Freshwater crocodiles in the pools year-round."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.7212,
+          -18.0733
+        ]
+      },
+      "properties": {
+        "name": "Danggu (Geikie Gorge) National Park",
+        "type": "Devonian Reef \u2014 Fossils",
+        "color": "#c8860a",
+        "location": "Geikie Range, 20km from Fitzroy Crossing.",
+        "access": "Sealed road from Fitzroy Crossing. Day use only, open April\u2013November. Check park status \u2014 damaged by 2023 Fitzroy River floods.",
+        "comment": "14km gorge cut by the Fitzroy River through the Devonian Great Barrier Reef (350 million years old). Flood-cleaned white walls expose fossils clearly. Bivalve shells visible in marginal-slope deposits. Atoll-type reefs at nearby Fossil Downs. Live fauna includes sawfish, stingrays, barramundi and freshwater Johnston crocodiles."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.1766,
+          -17.4702
+        ]
+      },
+      "properties": {
+        "name": "Dimalurru (Tunnel Creek) National Park",
+        "type": "Cave / Devonian Reef",
+        "color": "#008080",
+        "location": "Napier Range, 38km southeast of Windjana Gorge.",
+        "access": "Unsealed road. Bring a torch, wear shoes you can get wet. Open dry season only.",
+        "comment": "WA's oldest cave system \u2014 a 750m tunnel through Devonian reef limestone of the Napier Range (350 million years old). Up to 20m high and 15m wide. Stalactites, permanent pools, ghost bats and freshwater crocodiles inside. Roof has collapsed near the centre letting in daylight. Historic hideout of Bunuba leader Jandamarra, killed at the entrance in 1897. Aboriginal rock paintings on cave walls."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.7167,
+          -32.1
+        ]
+      },
+      "properties": {
+        "name": "Youndegin Meteorite Strewnfield",
+        "type": "Iron Meteorite Strewnfield",
+        "color": "#7b3fa0",
+        "location": "Near Quairading, Wheatbelt WA. ~140km east of Perth.",
+        "access": "2WD sealed roads. Private farmland \u2014 knock and ask permission before going onto paddocks.",
+        "comment": "WA's first recorded meteorite find (1884) and one of the largest iron meteorite strewnfields in Australia. At least 15 masses totalling 3.8 tonnes recovered over a 20km radius, including a 2,626kg main mass now at the WAM. Iron octahedrites \u2014 heavy, dark rusty-brown fusion crust, strongly magnetic. Carry a strong rare earth magnet on a string. Look for rocks that seem too heavy for their size, with a smooth rounded exterior. Most finds were in ploughed paddocks. Also recorded nearby: Mooranoppin, Mount Stirling and Quairading irons \u2014 all part of the same ancient fall. Two minerals (Cliftonite and Roaldite) were first discovered in the world in Youndegin specimens."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.9833,
+          -31.95
+        ]
+      },
+      "properties": {
+        "name": "Mooranoppin Meteorite Find Area",
+        "type": "Iron Meteorite Find",
+        "color": "#7b3fa0",
+        "location": "Near Mooranoppin, Wheatbelt WA. ~20km north of Quairading strewnfield.",
+        "access": "2WD sealed roads. Private farmland \u2014 permission required.",
+        "comment": "Iron meteorite find now recognised as part of the broader Youndegin strewnfield \u2014 the same ancient fall scattered fragments across ~20km of wheatbelt country. Found in farmland near Merredin road. Same identification tips apply: carry a strong magnet, look for heavy dark-crusted rocks in ploughed ground. Combine with Youndegin area for a meteorite day trip."
       }
     }
   ]

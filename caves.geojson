@@ -31,7 +31,7 @@
         "location": "Margaret River Region",
         "type": "Limestone — Semi-Guided",
         "access": "2WD",
-        "comment": "Torches and helmets provided. Great boardwalks over seasonal water features."
+        "comment": "Torches and helmets provided. Great boardwalks over seasonal water features. Contains a stream that trickles through year-round, carrying nutrients to tiny cave creatures. Also the information and booking centre for Leeuwin-Naturaliste National Park adventure caves."
       }
     },
     {
@@ -42,7 +42,7 @@
         "location": "Cape Range National Park, Exmouth",
         "type": "Wild Subterranean Karst — Closed Entry",
         "access": "4WD — rugged walk",
-        "comment": "Cape Range has over 700 highly sensitive wild karst caves. Entry not permitted due to safety and protection of rare bats and troglobites."
+        "comment": "Cape Range has over 700 highly sensitive wild karst caves and is one of the most significant cave fauna areas on Earth. Home to Australia's only two troglobitic fish — the blind gudgeon and blind cave eel. Relict fauna from a much wetter past. Entry not permitted due to safety and protection of rare bats and troglobites."
       }
     },
     {
@@ -64,7 +64,7 @@
         "location": "Yanchep National Park",
         "type": "Stream Cave — Show Cave",
         "access": "2WD",
-        "comment": "Perth's only metropolitan tourist cave. Main tour requires a ticket. Surrounding paths show collapsed limestone karst depressions and historic stone infrastructure."
+        "comment": "Perth's only metropolitan tourist cave. Main tour requires a ticket. Surrounding paths show collapsed limestone karst depressions and historic stone infrastructure. Root mat communities harbour rare aquatic cave animals."
       }
     },
     {
@@ -75,7 +75,18 @@
         "location": "King Leopold Ranges, Napier Range",
         "type": "Self-Guided River Tunnel",
         "access": "4WD only — seasonal",
-        "comment": "WA's oldest cave system. A breathtaking 750m natural tunnel through the reef. Cavernous entry archway visible just a short walk from the car park."
+        "comment": "WA's oldest cave system. A breathtaking 750m natural tunnel through 350-million-year-old Devonian reef limestone, up to 20m high and 15m wide. Stalactites, permanent pools, ghost bats, fruit bats and freshwater crocodiles inside. Roof collapsed near centre letting in daylight. Historic hideout of Bunuba leader Jandamarra, killed at the entrance in 1897. Aboriginal rock paintings on cave walls."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [116.4700, -33.6700] },
+      "properties": {
+        "name": "Devil's Lair",
+        "location": "Witchcliffe area, south-west WA (closed archaeological site)",
+        "type": "Archaeological Cave — Closed to Public",
+        "access": "No public access",
+        "comment": "One of Australia's most significant archaeological sites. Stone and bone artefacts, intact campfire ash-beds and mammal bones show Aboriginal people occupied this cave about 50,000 years ago. Children's teeth indicate family groups used it. Stone tools confirm food preparation and camp activities. Closed to visitors to protect the site."
       }
     },
     {
@@ -97,7 +108,7 @@
         "location": "Forest Grove / Boranup",
         "type": "Wild Adventure Cave",
         "access": "2WD",
-        "comment": "Pitch black self-guided exploration. Vertical ladder climbs, boulder scrambles and tight squeezes through the Chimney. Hard hats and torches mandatory."
+        "comment": "Pitch black self-guided exploration. Entered via a spectacular collapsed doline almost 100m in diameter, plunging 86m into the earth. Vertical ladder climbs, boulder scrambles and tight squeezes through the Chimney. Hard hats and torches mandatory. One of the biggest and deepest caves on the Leeuwin-Naturaliste Ridge."
       }
     },
     {
@@ -108,7 +119,7 @@
         "location": "Augusta / Deepdene",
         "type": "Limestone — Show Cave",
         "access": "2WD",
-        "comment": "WA's largest show cave. Home to one of the longest straw stalactites in the world."
+        "comment": "WA's largest show cave. Named after the Jewel Casket formation in its lower section. Home to one of the longest straw stalactites in the world. Features lavish cave formations ranging from tiny crystal clusters to enormous flowstones that glow gold in artificial light."
       }
     },
     {
@@ -119,7 +130,7 @@
         "location": "Boranup / Margaret River",
         "type": "Limestone — Show Cave",
         "access": "2WD",
-        "comment": "Features a stunning Suspended Table formation hanging over a permanent crystal lake."
+        "comment": "Features a stunning Suspended Table formation hanging over a permanent crystal lake. One of the most impressive cave entrances in WA — at the bottom of a huge closed depression. The lake is formed by a stream flowing through the cave."
       }
     },
     {
@@ -130,7 +141,7 @@
         "location": "Boranup / Margaret River",
         "type": "Limestone — Self-Guided Show Cave",
         "access": "2WD",
-        "comment": "Highly accessible. Famous for housing ancient megafauna fossils."
+        "comment": "One of the south-west's biggest and most spectacular caves. Natural time capsule containing remains of long-extinct megafauna including Zygomaturus trilobus (hippo-sized marsupial), giant echidna Zaglossus hacketti (largest known monotreme), two species of extinct short-faced kangaroo, and thylacine remains. Enormous caverns thickly encrusted with beautiful speleothems."
       }
     },
     {
@@ -185,7 +196,18 @@
         "location": "Yallingup",
         "type": "Limestone — Show Cave",
         "access": "2WD",
-        "comment": "Located at the northern end of the ridge. Rich Indigenous cultural significance."
+        "comment": "The first cave in WA to be opened to tourists — enchanting visitors for over a century. Rich significance in the legends of the local Wardandi Aboriginal people. Features dazzling speleothems. Semi-guided tours available plus adventure tours into deeper sections."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [115.3983, -29.9800] },
+      "properties": {
+        "name": "Stockyard Gully",
+        "location": "Stockyard Gully National Park, near Jurien Bay",
+        "type": "Limestone Walkthrough Tunnel Cave",
+        "access": "2WD to carpark, short walk",
+        "comment": "A spectacular natural tunnel cave you can walk through — three registered caves in one system (Stockyard Tunnel 6E-1, Stockyard Bridge 6E-2, Stockyard Cave 6E-3). Part of a significant Eneabba karst area with numerous dolines and cave systems. Torch recommended. Similar experience to Tunnel Creek but in the mid-west."
       }
     },
     {
