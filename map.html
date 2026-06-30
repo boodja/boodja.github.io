@@ -178,7 +178,7 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 </div>
 
 <div id="layer-search-bar">
-    <input type="text" id="layer-search-input" placeholder="Search fossils, caves, lighthouses..." autocomplete="off">
+    <input type="text" id="layer-search-input" placeholder="Search geosites, lighthouses, country..." autocomplete="off">
     <div id="layer-search-results"></div>
 </div>
 
@@ -263,11 +263,8 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
         <button id="btn-aboriginal" class="layer-btn" onclick="toggleAboriginal()">
             <img src="icons/aboriginal.png" style="width:28px;height:28px;"><span>Country</span>
         </button>
-        <button id="btn-caves" class="layer-btn" onclick="toggleCaves()">
-            <img src="icons/caves.png" style="width:28px;height:28px;"><span>Caves</span>
-        </button>
-        <button id="btn-fossils" class="layer-btn" onclick="toggleFossils()">
-            <img src="icons/fossil.png" style="width:28px;height:28px;"><span>Fossils</span>
+        <button id="btn-geosites" class="layer-btn" onclick="toggleGeosites()">
+            <img src="icons/fossil.png" style="width:28px;height:28px;"><span>GeoSites</span>
         </button>
     </div>
 </div>
@@ -518,8 +515,7 @@ function closeLayerSearch() {
 function buildSearchIndex() {
     const index = [];
     const sources = [
-        { data: typeof fossilsData !== 'undefined' ? fossilsData : null, layer: 'Fossils & Geology' },
-        { data: typeof cavesData !== 'undefined' ? cavesData : null, layer: 'Caves' },
+        { data: typeof geositesData !== 'undefined' ? geositesData : null, layer: 'GeoSites' },
         { data: typeof lighthouseData !== 'undefined' ? lighthouseData : null, layer: 'Lighthouses' },
         { data: typeof aboriginalData !== 'undefined' ? aboriginalData : null, layer: 'Aboriginal Sites' },
     ];

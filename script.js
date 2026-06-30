@@ -1084,85 +1084,36 @@ function renderAboriginal() {
     });
 }
 
-// ── Caves layer ──
-let caveMarkers = [];
-let cavesActive = false;
-let cavesData = null;
+// ── GeoSites layer (fossils, caves, shells, minerals, meteorites) ──
+let geositeMarkers = [];
+let geositesActive = false;
+let geositesData = null;
 
-function toggleCaves() {
-    const btn = document.getElementById('btn-caves');
-    if (cavesActive) {
-        caveMarkers.forEach(function(m) { map.removeLayer(m); });
-        caveMarkers = [];
-        cavesActive = false;
+function toggleGeosites() {
+    const btn = document.getElementById('btn-geosites');
+    if (geositesActive) {
+        geositeMarkers.forEach(function(m) { map.removeLayer(m); });
+        geositeMarkers = [];
+        geositesActive = false;
         btn.classList.remove('active');
     } else {
-        cavesActive = true;
+        geositesActive = true;
         btn.classList.add('active');
-        if (cavesData) {
-            renderCaves();
+        if (geositesData) {
+            renderGeosites();
         } else {
-            fetch('caves.geojson')
+            fetch('geosites.geojson')
                 .then(r => r.json())
-                .then(function(data) { cavesData = data; renderCaves(); })
-                .catch(function(err) { console.log('Caves error:', err); });
+                .then(function(data) { geositesData = data; renderGeosites(); })
+                .catch(function(err) { console.log('GeoSites error:', err); });
         }
     }
 }
 
-function renderCaves() {
-    cavesData.features.forEach(function(f) {
+function renderGeosites() {
+    geositesData.features.forEach(function(f) {
         const p = f.properties;
-        const icon = L.divIcon({
-            html: '<div style="width:14px;height:14px;background:#008080;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>',
-            className: '',
-            iconSize: [14, 14],
-            iconAnchor: [7, 7]
-        });
-        const marker = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon }).addTo(map);
-        const popupDiv = document.createElement('div');
-        popupDiv.style.minWidth = '240px';
-        popupDiv.innerHTML =
-            '<b>' + p.name + '</b><br>' +
-            '<small style="color:#008080;"><b>' + p.type + '</b></small><br><br>' +
-            (p.location ? '<b>Location:</b> ' + p.location + '<br>' : '') +
-            (p.access ? '<b>Access:</b> ' + p.access + '<br>' : '') +
-            (p.comment ? '<br>' + p.comment : '');
-        marker.bindPopup(popupDiv);
-        caveMarkers.push(marker);
-    });
-}
-
-// ── Fossils layer ──
-let fossilMarkers = [];
-let fossilsActive = false;
-let fossilsData = null;
-
-function toggleFossils() {
-    const btn = document.getElementById('btn-fossils');
-    if (fossilsActive) {
-        fossilMarkers.forEach(function(m) { map.removeLayer(m); });
-        fossilMarkers = [];
-        fossilsActive = false;
-        btn.classList.remove('active');
-    } else {
-        fossilsActive = true;
-        btn.classList.add('active');
-        if (fossilsData) {
-            renderFossils();
-        } else {
-            fetch('fossils.geojson')
-                .then(r => r.json())
-                .then(function(data) { fossilsData = data; renderFossils(); })
-                .catch(function(err) { console.log('Fossils error:', err); });
-        }
-    }
-}
-
-function renderFossils() {
-    fossilsData.features.forEach(function(f) {
-        const p = f.properties;
-        const pinColor = p.color || '#c8860a';
+        const pinColor = p.color || '#8B6347';
         const icon = L.divIcon({
             html: '<div style="width:14px;height:14px;background:' + pinColor + ';border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>',
             className: '',
@@ -1180,7 +1131,7 @@ function renderFossils() {
             (p.comment ? '<br>' + p.comment : '') +
             (p.wam_url ? '<br><br><a href="' + p.wam_url + '" target="_blank" style="color:#1a7abf;font-size:12px;">🏛 View WAM type specimen</a>' : '');
         marker.bindPopup(popupDiv);
-        fossilMarkers.push(marker);
+        geositeMarkers.push(marker);
     });
 }
 
@@ -1196,8 +1147,9 @@ window.toggleFuel = toggleFuel;
 window.toggleWater = toggleWater;
 window.toggleLighthouses = toggleLighthouses;
 window.toggleAboriginal = toggleAboriginal;
-window.toggleCaves = toggleCaves;
-window.toggleFossils = toggleFossils;
+window.toggleCaves = toggleGeosites;
+window.toggleFossils = toggleGeosites;
+window.toggleGeosites = toggleGeosites;
 window.toggle2x2 = toggle2x2;
 window.show2x2Route = show2x2Route;
 window.toggleTrailLayer = toggleTrailLayer;
