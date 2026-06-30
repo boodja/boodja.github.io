@@ -1,5 +1,5 @@
-// Firebase setup
 
+// Map Layers
 
 const map = L.map('map').setView([-33.57, 115.82], 10);
 
@@ -11,18 +11,19 @@ const stadiaOutdoors = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/
     attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors'
 });
 
-const stadiaSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}@2x.jpg?api_key=86ff4306-49d2-4ba6-a5b2-eaf6d97ba472', {
+const stadiaDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}@2x.png?api_key=86ff4306-49d2-4ba6-a5b2-eaf6d97ba472', {
     attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors'
 });
 
-const stadiaDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}@2x.png?api_key=86ff4306-49d2-4ba6-a5b2-eaf6d97ba472', {
-    attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors'
+const esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+    maxZoom: 19
 });
 
 stadiaOutdoors.addTo(map);
 let currentLayer = stadiaOutdoors;
 
-
+//Pin Types Personalised 
 
 const pinTypes = {
     camp:    { icon: '', color: '#2d8a4e', label: 'Campsite' },
@@ -35,6 +36,8 @@ const pinTypes = {
     dump:    { icon: '', color: '#1f15a8', label: 'Dump Site' },
     warn:    { icon: '', color: '#cc3333', label: 'Warning' },
 };
+
+// Firebase setup
 
 const firebaseConfig = {
     apiKey: "AIzaSyBlFRgfgLIwubKc60ZAjAK8DP4oYyTd9No",
@@ -638,10 +641,14 @@ function fetchOSMLayer(tag, markersArray, colour, label) {
         });
 }
 
+let moveEndTimer = null;
 map.on('moveend', function() {
-    fetchWACamps();
-    if (fuelActive) { fuelMarkers.forEach(m => map.removeLayer(m)); fuelMarkers.length = 0; fetchOSMLayer('amenity=fuel', fuelMarkers, '#e63946', 'Fuel Station'); }
-    if (waterActive) { waterMarkers.forEach(m => map.removeLayer(m)); waterMarkers.length = 0; fetchOSMLayer('amenity=drinking_water', waterMarkers, '#1a6dd8', 'Drinking Water'); }
+    clearTimeout(moveEndTimer);
+    moveEndTimer = setTimeout(function() {
+        fetchWACamps();
+        if (fuelActive) { fuelMarkers.forEach(m => map.removeLayer(m)); fuelMarkers.length = 0; fetchOSMLayer('amenity=fuel', fuelMarkers, '#e63946', 'Fuel Station'); }
+        if (waterActive) { waterMarkers.forEach(m => map.removeLayer(m)); waterMarkers.length = 0; fetchOSMLayer('amenity=drinking_water', waterMarkers, '#1a6dd8', 'Drinking Water'); }
+    }, 500);
 });
 
 // Lighthouse layer
