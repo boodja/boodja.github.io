@@ -518,11 +518,22 @@ const incidentIcon = iconMap[incident['incident-icon']] || 'ew-other-incident';
 }
 let waCampMarkers = [];
 let waCampsActive = false;
+const waCampCluster = L.markerClusterGroup({
+    maxClusterRadius: 50,
+    iconCreateFunction: function(cluster) {
+        return L.divIcon({
+            html: '<div style="background:#d67214;color:white;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.4);">' + cluster.getChildCount() + '</div>',
+            className: '',
+            iconSize: [34, 34]
+        });
+    }
+});
 
 function toggleWACamps() {
     const btn = document.getElementById('btn-wacamps');
     if (waCampsActive) {
-        waCampMarkers.forEach(m => map.removeLayer(m));
+        waCampCluster.clearLayers();
+        map.removeLayer(waCampCluster);
         waCampMarkers = [];
         waCampsActive = false;
         btn.style.background = 'white';
@@ -530,13 +541,14 @@ function toggleWACamps() {
     } else {
         waCampsActive = true;
         btn.style.background = '#ffe0b2';
+        map.addLayer(waCampCluster);
         fetchWACamps();
     }
 }
 
 function fetchWACamps() {
     if (!waCampsActive) return;
-    waCampMarkers.forEach(m => map.removeLayer(m));
+    waCampCluster.clearLayers();
     waCampMarkers = [];
     const b = map.getBounds();
     const bbox = b.getSouth() + ',' + b.getWest() + ',' + b.getNorth() + ',' + b.getEast();
@@ -552,8 +564,9 @@ function fetchWACamps() {
                     iconSize: [12, 12],
                     iconAnchor: [6, 6]
                 });
-                const marker = L.marker([e.lat, e.lon], { icon }).addTo(map);
+                const marker = L.marker([e.lat, e.lon], { icon });
                 buildCampPopup(marker, e, name);
+                waCampCluster.addLayer(marker);
                 waCampMarkers.push(marker);
             });
         });
