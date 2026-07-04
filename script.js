@@ -542,14 +542,15 @@ function toggleWACamps() {
         btn.style.background = 'white';
         btn.style.opacity = '1';
     } else {
-        waCampsActive = true;
-        btn.style.background = '#ffe0b2';
-        map.addLayer(waCampCluster);
-        fetchWACamps();
-    }
+    waCampsActive = true;
+    btn.style.background = '#ffe0b2';
+    map.addLayer(waCampCluster);
+    fetchWACamps();
 }
 
-function fetchWACamps() {
+}
+
+function fetchWACamps_OLD() {
     if (!waCampsActive) return;
     waCampCluster.clearLayers();
     waCampMarkers = [];
@@ -645,7 +646,7 @@ let moveEndTimer = null;
 map.on('moveend', function() {
     clearTimeout(moveEndTimer);
     moveEndTimer = setTimeout(function() {
-        fetchWACamps();
+
         if (fuelActive) { fuelMarkers.forEach(m => map.removeLayer(m)); fuelMarkers.length = 0; fetchOSMLayer('amenity=fuel', fuelMarkers, '#e63946', 'Fuel Station'); }
         if (waterActive) { waterMarkers.forEach(m => map.removeLayer(m)); waterMarkers.length = 0; fetchOSMLayer('amenity=drinking_water', waterMarkers, '#1a6dd8', 'Drinking Water'); }
     }, 500);
@@ -1153,3 +1154,28 @@ window.toggleGeosites = toggleGeosites;
 window.toggle2x2 = toggle2x2;
 window.show2x2Route = show2x2Route;
 window.toggleTrailLayer = toggleTrailLayer;
+
+// ── WA Camps — fixed WA bounding box, fetches once on toggle ──
+function fetchWACamps() {
+    if (!waCampsActive) return;
+    const WA_BBOX = '-35.5,112.0,-13.5,129.0';
+    fetch('https://overpass-api.de/api/interpreter?data=[out:json];node[tourism=camp_site](' + WA_BBOX + ');out;')
+        .then(r => r.json())
+        .then(function(data) {
+            data.elements.forEach(function(e) {
+                if (!e.lat || !e.lon) return;
+                const name = e.tags.name || 'Campsite';
+                const icon = L.divIcon({
+                    html: '<div style="width:12px;height:12px;background:#d67214;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.3);"></div>',
+                    className: '',
+                    iconSize: [12, 12],
+                    iconAnchor: [6, 6]
+                });
+                const marker = L.marker([e.lat, e.lon], { icon });
+                buildCampPopup(marker, e, name);
+                waCampCluster.addLayer(marker);
+                waCampMarkers.push(marker);
+            });
+        })
+        .catch(function(err) { console.log('Camps error:', err); });
+}
