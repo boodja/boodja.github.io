@@ -105,6 +105,10 @@ function makeIcon(type) {
     });
 }
 
+function makeNavButton(lat, lng) {
+    return '<a href="https://www.google.com/maps/dir/?api=1&destination=' + lat + ',' + lng + '" target="_blank" style="display:inline-block;margin-top:10px;padding:8px 14px;border-radius:10px;background:#1a6dd8;color:white;font-size:13px;font-weight:600;text-decoration:none;">🧭 Navigate</a>';
+}
+
 function makePopup(p, index) {
     const t = pinTypes[p.type] || pinTypes['point'];
     return '<b>' + t.icon + ' ' + p.name + '</b><br>' +
@@ -116,7 +120,8 @@ function makePopup(p, index) {
         (p.photo ? '<img src="' + p.photo + '" style="width:100%;border-radius:8px;margin-bottom:8px;"><br>' : '') +
         '<button onclick="speakPin(' + index + ')" style="padding:8px 14px;border-radius:10px;border:none;background:#333;color:#f2f2f2;font-size:13px;font-weight:600;cursor:pointer;margin-right:4px;">Read</button>' +
         '<button onclick="editPin(' + index + ')" style="padding:8px 14px;border-radius:10px;border:none;background:rgba(214,114,20,0.85);color:white;font-size:13px;font-weight:600;cursor:pointer;margin-right:4px;">Edit</button>' +
-        '<button onclick="deletePin(' + index + ')" style="padding:8px 14px;border-radius:10px;border:none;background:#f0f0f0;color:#444;font-size:13px;font-weight:600;cursor:pointer;">Remove</button>';
+        '<button onclick="deletePin(' + index + ')" style="padding:8px 14px;border-radius:10px;border:none;background:#f0f0f0;color:#444;font-size:13px;font-weight:600;cursor:pointer;">Remove</button>' +
+        '<br>' + makeNavButton(p.lat, p.lng);
 }
 
 function speakPin(index) {
@@ -688,6 +693,8 @@ function renderLighthouses() {
             iconAnchor: [7, 7]
         });
         const marker = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon }).addTo(map);
+        const lhLat = f.geometry.coordinates[1];
+        const lhLng = f.geometry.coordinates[0];
         marker.bindPopup(
             '<b>' +p.name + '</b><br>' +
             '<small>Established ' + p.established + '</small><br><br>' +
@@ -695,7 +702,8 @@ function renderLighthouses() {
             (p.height ? 'Height: ' + p.height + '<br>' : '') +
             'Status: ' + p.status + '<br>' +
             (p.access ? 'Access: ' + p.access + '<br>' : '') +
-            (p.remarks ? '<br><small>' + p.remarks + '</small>' : '')
+            (p.remarks ? '<br><small>' + p.remarks + '</small>' : '') +
+            makeNavButton(lhLat, lhLng)
         );
         lighthouseMarkers.push(marker);
     });
@@ -791,6 +799,12 @@ function buildCampPopup(marker, e, name) {
     const notesBtn = document.createElement('button');
     notesBtn.textContent = 'Add Notes';
     notesBtn.style.cssText = 'padding:7px 14px;border-radius:8px;border:1.5px solid #d67214;background:white;color:#d67214;font-size:13px;font-weight:600;cursor:pointer;';
+    const navBtn = document.createElement('a');
+    navBtn.href = 'https://www.google.com/maps/dir/?api=1&destination=' + e.lat + ',' + e.lon;
+    navBtn.target = '_blank';
+    navBtn.textContent = '🧭 Navigate';
+    navBtn.style.cssText = 'display:inline-block;padding:7px 14px;border-radius:8px;background:#1a6dd8;color:white;font-size:13px;font-weight:600;text-decoration:none;';
+    btnRow.appendChild(navBtn);
     btnRow.appendChild(notesBtn);
     popupDiv.appendChild(btnRow);
 
@@ -1079,7 +1093,8 @@ function renderAboriginal() {
             (p.significance ? '<br>' + p.significance + '<br>' : '') +
             (p.access ? '<br><b>Access:</b> ' + p.access + '<br>' : '') +
             (p.permits ? '<b>Permits:</b> ' + p.permits + '<br>' : '') +
-            (p.guided_tours ? '<b>Tours:</b> ' + p.guided_tours + '<br>' : '');
+            (p.guided_tours ? '<b>Tours:</b> ' + p.guided_tours + '<br>' : '') +
+            makeNavButton(f.geometry.coordinates[1], f.geometry.coordinates[0]);
         marker.bindPopup(popupDiv);
         aboriginalMarkers.push(marker);
     });
@@ -1130,7 +1145,8 @@ function renderGeosites() {
             (p.location ? '<b>Location:</b> ' + p.location + '<br>' : '') +
             (p.access ? '<b>Access:</b> ' + p.access + '<br>' : '') +
             (p.comment ? '<br>' + p.comment : '') +
-            (p.wam_url ? '<br><br><a href="' + p.wam_url + '" target="_blank" style="color:#1a7abf;font-size:12px;">🏛 View WAM type specimen</a>' : '');
+            (p.wam_url ? '<br><br><a href="' + p.wam_url + '" target="_blank" style="color:#1a7abf;font-size:12px;">🏛 View WAM type specimen</a>' : '') +
+            makeNavButton(f.geometry.coordinates[1], f.geometry.coordinates[0]);
         marker.bindPopup(popupDiv);
         geositeMarkers.push(marker);
     });
