@@ -111,10 +111,12 @@ function makeNavButton(lat, lng) {
 
 function makePopup(p, index) {
     const t = pinTypes[p.type] || pinTypes['point'];
+    const stars = parseInt(p.stars) || 0;
+    const note = p.note || '';
     return '<b>' + t.icon + ' ' + p.name + '</b><br>' +
         '<small>' + t.label + '</small><br><br>' +
-        p.note + '<br><br>' +
-        '⭐'.repeat(p.stars) + '<br>' +
+        note + '<br><br>' +
+        '⭐'.repeat(stars) + '<br>' +
         '<small>' + p.lat + ', ' + p.lng + '</small><br><br>' +
         (p.url ? '<a href="' + p.url + '" target="_blank">🔗 More info</a><br><br>' : '') +
         (p.photo ? '<img src="' + p.photo + '" style="width:100%;border-radius:8px;margin-bottom:8px;"><br>' : '') +
