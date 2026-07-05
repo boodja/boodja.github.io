@@ -299,9 +299,10 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 </div>
 
 <!-- Season / GPS bar -->
-<div id="season-bar" style="position:fixed;bottom:0;left:0;right:0;padding:6px 12px;font-size:13px;color:#f2f2f2;z-index:999;background:#333;display:flex;align-items:center;justify-content:center;">
-    <span id="season-text" style="text-align:center;"></span>
+<div id="season-bar" style="position:fixed;bottom:0;left:0;right:0;padding:6px 12px;font-size:13px;color:#f2f2f2;z-index:999;background:#333;display:flex;align-items:center;justify-content:space-between;">
+    <span id="season-text" style="text-align:center;flex:1;"></span>
     <span id="gps-indicator" style="display:inline-flex;align-items:center;margin-left:10px;"></span>
+    <button id="proximity-mute-btn" onclick="toggleProximityMute()" style="background:none;border:none;color:#f2f2f2;font-size:20px;cursor:pointer;padding:0 4px;margin-left:10px;" title="Toggle proximity voice">🔊</button>
 </div>
 
 <!-- Pin form -->

@@ -345,6 +345,7 @@ if ('speechSynthesis' in window) {
 
 function speak(text) {
     if (!('speechSynthesis' in window)) return;
+    if (proximityMuted) return;
     window.speechSynthesis.cancel();
     window.speechSynthesis.resume();
     window.speechSynthesis.resume();
@@ -360,23 +361,48 @@ function speak(text) {
     window.speechSynthesis.speak(utterance);
 }
 let spokenPins = new Set();
-let proximityRadius = 5;
+let spokenCamps = new Set();
+let proximityRadius = 2;
+let proximityMuted = false;
+
+function toggleProximityMute() {
+    proximityMuted = !proximityMuted;
+    const btn = document.getElementById('proximity-mute-btn');
+    if (btn) btn.textContent = proximityMuted ? '🔇' : '🔊';
+}
 
 function checkProximity(userLat, userLng) {
+    if (proximityMuted) return;
+
+    // Check Firebase pins
     savedPins.forEach(function(p, index) {
         if (spokenPins.has(index)) return;
-        
         const dist = getDistance(userLat, userLng, parseFloat(p.lat), parseFloat(p.lng));
-        
-if (dist <= proximityRadius) {
+        if (dist <= proximityRadius) {
             spokenPins.add(index);
-            const t = pinTypes[p.type];
+            const t = pinTypes[p.type] || pinTypes['point'];
             const km = dist.toFixed(1);
-            const text = t.label + ' ahead. ' + p.name + '. ' + p.note + '. Rated ' + p.stars + ' stars. ' + km + ' kilometres.';
+            const text = p.name + '. ' + km + ' kilometres away.';
             speak(text);
-            setTimeout(function() { spokenPins.delete(index); }, 60000);
+            setTimeout(function() { spokenPins.delete(index); }, 120000);
         }
     });
+
+    // Check camps layer
+    if (waCampsActive) {
+        waCampMarkers.forEach(function(marker, index) {
+            if (spokenCamps.has(index)) return;
+            const ll = marker.getLatLng();
+            const dist = getDistance(userLat, userLng, ll.lat, ll.lng);
+            if (dist <= proximityRadius) {
+                spokenCamps.add(index);
+                const name = marker._campName || 'Campsite';
+                const km = dist.toFixed(1);
+                speak('Campsite ahead. ' + name + '. ' + km + ' kilometres.');
+                setTimeout(function() { spokenCamps.delete(index); }, 120000);
+            }
+        });
+    }
 }
 
 function getDistance(lat1, lng1, lat2, lng2) {
@@ -574,6 +600,7 @@ function fetchWACamps_OLD() {
                     iconAnchor: [6, 6]
                 });
                 const marker = L.marker([e.lat, e.lon], { icon });
+                marker._campName = name;
                 buildCampPopup(marker, e, name);
                 waCampCluster.addLayer(marker);
                 waCampMarkers.push(marker);
@@ -1188,6 +1215,7 @@ function fetchWACamps() {
                     iconAnchor: [6, 6]
                 });
                 const marker = L.marker([e.lat, e.lon], { icon });
+                marker._campName = name;
                 buildCampPopup(marker, e, name);
                 waCampCluster.addLayer(marker);
                 waCampMarkers.push(marker);
