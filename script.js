@@ -2,7 +2,7 @@
 // Map Layers
 
 const map = L.map('map', { zoomControl: false }).setView([-33.57, 115.82], 10);
-L.control.zoom({ position: 'bottomright' }).addTo(map);
+L.control.zoom({ position: 'topright' }).addTo(map);
 
 const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'

@@ -102,7 +102,7 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 .layer-btn.active { background: #ffe0b2; border-color: #d67214; }
 
 #add-pin-btn {
-    position: fixed; bottom: 55px; left: 10px;
+    position: fixed; bottom: 100px; left: 10px;
     background: #d67214; border: none; border-radius: 50%;
     width: 48px; height: 48px; z-index: 1001;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -163,9 +163,9 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 .form-buttons button { flex: 1; padding: 12px; border-radius: 12px; border: none; font-size: 15px; font-family: inherit; font-weight: 600; cursor: pointer; }
 #save-btn { background: rgba(214, 114, 20, 0.75); color: white; }
 #cancel-btn { background: #f0f0f0; color: #444; }
-.leaflet-bottom.leaflet-right { bottom: 50px !important; }
-.leaflet-bottom.leaflet-left { bottom: 50px !important; }
+.leaflet-bottom.leaflet-left { bottom: 55px !important; }
 .leaflet-control-zoom { margin-bottom: 0 !important; }
+.leaflet-control-attribution { display: none !important; }
 </style>
 </head>
 <body>
@@ -292,7 +292,7 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 </div>
 
 <!-- Panel toggle buttons -->
-<div style="position:fixed;bottom:55px;right:10px;z-index:1001;display:flex;flex-direction:row;gap:6px;">
+<div style="position:fixed;bottom:100px;right:10px;z-index:1001;display:flex;flex-direction:row;gap:6px;">
     <button onclick="togglePanel('explore')" style="background:white;border:1px solid #ddd;border-radius:8px;padding:6px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.2);">
         <img src="icons/explore.png" style="width:32px;height:32px;display:block;">
     </button>
@@ -302,9 +302,11 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 </div>
 
 <!-- Season / GPS bar -->
-<div id="season-bar" style="position:fixed;bottom:0;left:0;right:0;padding:6px 12px;font-size:13px;color:#f2f2f2;z-index:999;background:#333;display:flex;align-items:center;justify-content:center;">
-    <span id="season-text" style="text-align:center;"></span>
-    <span id="gps-indicator" style="display:inline-flex;align-items:center;margin-left:10px;"></span>
+<div id="season-bar" style="position:fixed;bottom:0;left:0;right:0;padding:6px 12px;font-size:13px;color:#f2f2f2;z-index:1002;background:#333;display:flex;align-items:center;justify-content:space-between;">
+    <span id="season-text" style="flex:1;text-align:center;"></span>
+    <span id="gps-indicator" style="display:inline-flex;align-items:center;margin-left:8px;"></span>
+    <span style="font-size:9px;color:#666;margin-left:6px;white-space:nowrap;">© OSM</span>
+    <button id="proximity-mute-btn" onclick="toggleProximityMute()" style="background:none;border:none;color:#f2f2f2;font-size:20px;cursor:pointer;padding:0 4px;margin-left:8px;" title="Toggle proximity voice">🔊</button>
 </div>
 
 <!-- Pin form -->
