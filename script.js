@@ -1,7 +1,8 @@
 
 // Map Layers
 
-const map = L.map('map').setView([-33.57, 115.82], 10);
+const map = L.map('map', { zoomControl: false }).setView([-33.57, 115.82], 10);
+L.control.zoom({ position: 'bottomright' }).addTo(map);
 
 const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
@@ -346,18 +347,13 @@ if ('speechSynthesis' in window) {
 function speak(text) {
     if (!('speechSynthesis' in window)) return;
     if (proximityMuted) return;
+    if (!speechUnlocked) return;
     window.speechSynthesis.cancel();
-    window.speechSynthesis.resume();
     window.speechSynthesis.resume();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 0.9;
     utterance.pitch = 1;
-
-    // Use the cached voice if found
-    if (targetVoice) {
-        utterance.voice = targetVoice;
-    }
-
+    if (targetVoice) utterance.voice = targetVoice;
     window.speechSynthesis.speak(utterance);
 }
 let spokenPins = new Set();

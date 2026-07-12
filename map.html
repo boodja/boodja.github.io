@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-#map { height: calc(100vh - 86px); width: 100%; margin-top: 48px; }
+#map { height: calc(100vh - 96px); width: 100%; margin-top: 48px; }
 
 .topnav {
     background-color: #333;
@@ -163,6 +163,9 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 .form-buttons button { flex: 1; padding: 12px; border-radius: 12px; border: none; font-size: 15px; font-family: inherit; font-weight: 600; cursor: pointer; }
 #save-btn { background: rgba(214, 114, 20, 0.75); color: white; }
 #cancel-btn { background: #f0f0f0; color: #444; }
+.leaflet-bottom.leaflet-right { bottom: 50px !important; }
+.leaflet-bottom.leaflet-left { bottom: 50px !important; }
+.leaflet-control-zoom { margin-bottom: 0 !important; }
 </style>
 </head>
 <body>
@@ -299,10 +302,9 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 </div>
 
 <!-- Season / GPS bar -->
-<div id="season-bar" style="position:fixed;bottom:0;left:0;right:0;padding:6px 12px;font-size:13px;color:#f2f2f2;z-index:999;background:#333;display:flex;align-items:center;justify-content:space-between;">
-    <span id="season-text" style="text-align:center;flex:1;"></span>
+<div id="season-bar" style="position:fixed;bottom:0;left:0;right:0;padding:6px 12px;font-size:13px;color:#f2f2f2;z-index:999;background:#333;display:flex;align-items:center;justify-content:center;">
+    <span id="season-text" style="text-align:center;"></span>
     <span id="gps-indicator" style="display:inline-flex;align-items:center;margin-left:10px;"></span>
-    <button id="proximity-mute-btn" onclick="toggleProximityMute()" style="background:none;border:none;color:#f2f2f2;font-size:20px;cursor:pointer;padding:0 4px;margin-left:10px;" title="Toggle proximity voice">🔊</button>
 </div>
 
 <!-- Pin form -->
