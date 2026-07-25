@@ -571,12 +571,11 @@ function toggleWACamps() {
         waCampCluster.clearLayers();
         map.removeLayer(waCampCluster);
         waCampMarkers = [];
-        waCampsActive = false;
-        btn.style.background = 'white';
-        btn.style.opacity = '1';
+       waCampsActive = false;
+        btn.classList.remove('active');
     } else {
-    waCampsActive = true;
-    btn.style.background = '#ffe0b2';
+        waCampsActive = true;
+        btn.classList.add('active');
     map.addLayer(waCampCluster);
     fetchWACamps();
 }
