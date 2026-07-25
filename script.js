@@ -613,11 +613,10 @@ function toggleFuel() {
         fuelMarkers.forEach(m => map.removeLayer(m));
         fuelMarkers = [];
         fuelActive = false;
-        btn.style.background = 'white';
-        btn.style.opacity = '1';
+        btn.classList.remove('active');
     } else {
         fuelActive = true;
-        btn.style.background = '#d67214';
+        btn.classList.add('active');
         fetchOSMLayer('amenity=fuel', fuelMarkers, '#e63946', 'Fuel Station');
     }
 }
@@ -631,11 +630,10 @@ function toggleWater() {
         waterMarkers.forEach(m => map.removeLayer(m));
         waterMarkers = [];
         waterActive = false;
-        btn.style.background = 'white';
-        btn.style.opacity = '1';
+        btn.classList.remove('active');
     } else {
         waterActive = true;
-        btn.style.background = '#1a6dd8';
+        btn.classList.add('active');
         fetchOSMLayer('amenity=drinking_water', waterMarkers, '#1a6dd8', 'Drinking Water');
     }
 }
@@ -1193,6 +1191,21 @@ window.toggleGeosites = toggleGeosites;
 window.toggle2x2 = toggle2x2;
 window.show2x2Route = show2x2Route;
 window.toggleTrailLayer = toggleTrailLayer;
+function toggleFilterSheet() {
+    const sheet = document.getElementById('filter-sheet');
+    const isOpen = sheet.style.display === 'block';
+    sheet.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) {
+        closeDrawer();
+        closeAddPinChooser();
+        closeLayerSearch();
+    }
+}
+
+function closeFilterSheet() {
+    const sheet = document.getElementById('filter-sheet');
+    if (sheet) sheet.style.display = 'none';
+}window.toggleFilterSheet = toggleFilterSheet;
 
 // ── WA Camps — fixed WA bounding box, fetches once on toggle ──
 function fetchWACamps() {
