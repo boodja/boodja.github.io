@@ -363,8 +363,14 @@ let proximityMuted = false;
 
 function toggleProximityMute() {
     proximityMuted = !proximityMuted;
-    const btn = document.getElementById('proximity-mute-btn');
-    if (btn) btn.textContent = proximityMuted ? '🔇' : '🔊';
+    const icon = document.getElementById('proximity-mute-icon');
+    if (icon) icon.src = proximityMuted ? 'icons/soundoff.png' : 'icons/soundon.png';
+    if ('speechSynthesis' in window) {
+        const unlock = new SpeechSynthesisUtterance('');
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(unlock);
+        speechUnlocked = true;
+    }
 }
 
 function checkProximity(userLat, userLng) {
