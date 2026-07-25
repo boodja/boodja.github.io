@@ -1191,6 +1191,8 @@ window.toggleGeosites = toggleGeosites;
 window.toggle2x2 = toggle2x2;
 window.show2x2Route = show2x2Route;
 window.toggleTrailLayer = toggleTrailLayer;
+window.toggleFilterSheet = toggleFilterSheet;
+window.closeFilterSheet = closeFilterSheet;
 function toggleFilterSheet() {
     const sheet = document.getElementById('filter-sheet');
     const isOpen = sheet.style.display === 'block';
