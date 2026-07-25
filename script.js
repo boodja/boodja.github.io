@@ -1180,6 +1180,23 @@ function renderGeosites() {
 }
 
 // Expose functions to global scope for inline HTML onclick handlers
+
+function toggleFilterSheet() {
+    const sheet = document.getElementById('filter-sheet');
+    const isOpen = sheet.style.display === 'block';
+    sheet.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) {
+        closeDrawer();
+        closeAddPinChooser();
+        closeLayerSearch();
+    }
+}
+
+function closeFilterSheet() {
+    const sheet = document.getElementById('filter-sheet');
+    if (sheet) sheet.style.display = 'none';
+}
+
 window.savePin = savePin;
 window.cancelPin = cancelPin;
 window.editPin = editPin;
@@ -1199,21 +1216,7 @@ window.show2x2Route = show2x2Route;
 window.toggleTrailLayer = toggleTrailLayer;
 window.toggleFilterSheet = toggleFilterSheet;
 window.closeFilterSheet = closeFilterSheet;
-function toggleFilterSheet() {
-    const sheet = document.getElementById('filter-sheet');
-    const isOpen = sheet.style.display === 'block';
-    sheet.style.display = isOpen ? 'none' : 'block';
-    if (!isOpen) {
-        closeDrawer();
-        closeAddPinChooser();
-        closeLayerSearch();
-    }
-}
 
-function closeFilterSheet() {
-    const sheet = document.getElementById('filter-sheet');
-    if (sheet) sheet.style.display = 'none';
-}window.toggleFilterSheet = toggleFilterSheet;
 
 // ── WA Camps — fixed WA bounding box, fetches once on toggle ──
 function fetchWACamps() {
