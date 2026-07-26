@@ -196,8 +196,6 @@ function fetchWACamps() {
 }
 
 // ── Notes (stored in Firebase, shared helper for trails + camps) ──
-let trailNotesCache = {};
-let campNotesCache = {};
 
 function trailKeyToFirebaseKey(fileKey) {
     return fileKey.replace(/[.#$\/\[\]]/g, '_');
