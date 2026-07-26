@@ -48,6 +48,13 @@ function buildBushfoodPopup(feature) {
 
 function loadBushfoodLayer(map) {
   const dot = document.getElementById('btn-bushfood');
+
+  // Kick off the seasonal calendar fetch in parallel — don't wait on the bushfood
+  // fetch to finish first, so it's ready (or close to it) by the time a popup opens.
+  if (!seasonalCalendar && typeof loadSeasonalCalendar === 'function') {
+    loadSeasonalCalendar();
+  }
+
   fetch('bushfood-wildflower-trails.geojson')
     .then(res => {
       if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching bushfood-wildflower-trails.geojson');
@@ -66,14 +73,15 @@ function loadBushfoodLayer(map) {
           });
         },
         onEachFeature: (feature, layer) => {
-          layer.bindPopup(buildBushfoodPopup(feature));
+          // Bound as a function, not a pre-built string: Leaflet calls this fresh
+          // each time the popup opens, so it always reflects the current
+          // (by-then-loaded) seasonalCalendar rather than whatever was true
+          // the instant the layer was constructed.
+          layer.bindPopup(() => buildBushfoodPopup(feature));
         }
       });
       bushfoodLayer.addTo(map);
       if (dot) dot.classList.add('active');
-      if (!seasonalCalendar && typeof loadSeasonalCalendar === 'function') {
-        loadSeasonalCalendar();
-      }
     })
     .catch(err => {
       console.error('Failed to load bushfood layer:', err);
