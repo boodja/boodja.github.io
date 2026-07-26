@@ -6,8 +6,11 @@
 let seasonalCalendar = null;
 
 function loadSeasonalCalendar() {
-  return fetch('data/seasonal-calendar.json')
-    .then(res => res.json())
+  return fetch('seasonal-calendar.json')
+    .then(res => {
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching seasonal-calendar.json');
+      return res.json();
+    })
     .then(data => { seasonalCalendar = data; return data; })
     .catch(err => { console.error('Failed to load seasonal calendar:', err); return null; });
 }
