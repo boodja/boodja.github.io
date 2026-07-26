@@ -1,0 +1,1462 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1281,
+          -21.9333
+        ]
+      },
+      "properties": {
+        "name": "Baiyungu Dreaming",
+        "location": "Exmouth & Coral Bay",
+        "region_code": "CC",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Snorkelling and swimming at secluded coastal sites",
+          "Sunset tour at Cardabia Station"
+        ],
+        "contact": {
+          "phone": "0437 871 189",
+          "email": "hazel@baiyungudreaming.com.au",
+          "website": "www.baiyungudreaming.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Balgal Cultural Tours",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Traditional fishing techniques",
+          "Seasonal bushfoods",
+          "Catch and cook by the river"
+        ],
+        "contact": {
+          "phone": "0477 905 319",
+          "email": "bookings@balgaltours.com.au",
+          "website": "www.balgaltours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Banana Well Getaway",
+        "location": "Dampier Peninsula, Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Self-guided bushfood and medicine plant nature trail",
+          "Campground with cabins and dip pool"
+        ],
+        "contact": {
+          "phone": "(08) 9192 4040",
+          "email": "bookings@bananawellgetaway.com.au",
+          "website": "www.bananawellgetaway.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Birchy's Fishing Tours",
+        "location": "Kununurra, East Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Overnight tagalong fishing tour",
+          "Waterhole swimming and rock art sites"
+        ],
+        "contact": {
+          "phone": "0459 540 763",
+          "email": "birchysfishingtours@gmail.com",
+          "website": "www.birchysfishingtours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9,
+          -33.0667
+        ]
+      },
+      "properties": {
+        "name": "Boola Bidi Dreaming",
+        "location": "Harvey",
+        "region_code": "SW",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Bushfood and medicine plant walks",
+          "Noongar cultural workshops and catering"
+        ],
+        "contact": {
+          "phone": "0460 862 204",
+          "email": "kaya@boolabidi.com.au",
+          "website": "www.boolabidi.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Borrgoron Coast to Creek Tours",
+        "location": "Dampier Peninsula, Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Rock oyster foraging cooked on the beach",
+          "Broome pearling history"
+        ],
+        "contact": {
+          "phone": "08 9192 4283",
+          "email": "hello@cygnetbaypearlfarm.com.au",
+          "website": "www.coasttocreektours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Brian Lee Tagalong Tours",
+        "location": "Dampier Peninsula, Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Foraging and fishing in creeks and mangroves",
+          "Bardi bush tucker stories"
+        ],
+        "contact": {
+          "phone": "0447 513 123",
+          "email": "campground@djarindjin.com.au",
+          "website": "www.brianleetagalong.com"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Bunda Bunda Tagalong Tours",
+        "location": "Dampier Peninsula, Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Mangrove jack and barramundi fishing",
+          "Seafood feast cooked over fire"
+        ],
+        "contact": {
+          "phone": "0486 028 623",
+          "email": "jaden@bundabundanjtours.com.au",
+          "website": "www.bundabundanjtours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Bundy's Cultural Tours",
+        "location": "Dampier Peninsula, Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Night fishing and beach cook-up",
+          "Bardi Country tagalong tours"
+        ],
+        "contact": {
+          "phone": "0447 513 123",
+          "email": "campground@djarindjin.com.au",
+          "website": "www.bundystours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.4167,
+          -17.5333
+        ]
+      },
+      "properties": {
+        "name": "Bungle Bungle Guided Tours",
+        "location": "Purnululu National Park, Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Cathedral Gorge and Echidna Chasm",
+          "Seasonal bushfood foraging"
+        ],
+        "contact": {
+          "phone": "(08) 9168 2213",
+          "email": "bookings@bbgt.com.au",
+          "website": "www.bunglebungleguidedtours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.891,
+          -33.8614
+        ]
+      },
+      "properties": {
+        "name": "Dabungool Cultural Experiences",
+        "location": "Esperance",
+        "region_code": "SW",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Pet-friendly tours",
+          "Medicine plants and bushfoods on Country"
+        ],
+        "contact": {
+          "phone": "0455 031 797",
+          "email": "dabungool@hotmail.com",
+          "website": "www.dabungool.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9667,
+          -31.8667
+        ]
+      },
+      "properties": {
+        "name": "Dale Tilbrook Experiences",
+        "location": "Swan Valley, Perth",
+        "region_code": "PER",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Noongar six-season calendar",
+          "Nutritional qualities of native plants"
+        ],
+        "contact": {
+          "phone": "0411 112 450",
+          "email": "info@daletilbrookexperiences.com.au",
+          "website": "www.daletilbrookexperiences.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7297,
+          -32.2767
+        ]
+      },
+      "properties": {
+        "name": "Djurandi Dreaming",
+        "location": "Rockingham & Perth",
+        "region_code": "PER",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Torchlight tours and wildlife spotting",
+          "Traditional dot painting classes"
+        ],
+        "contact": {
+          "phone": "0458 692 455",
+          "email": "justin@djurandi.com.au",
+          "website": "www.djurandi.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4686,
+          -31.5486
+        ]
+      },
+      "properties": {
+        "name": "Dudja Dreaming",
+        "location": "Toodyay",
+        "region_code": "WB",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Toodyay's Aboriginal history",
+          "Heritage site walking tour"
+        ],
+        "contact": {
+          "phone": "0428 959 084",
+          "email": "hello@dudjadreaming.com.au",
+          "website": "www.dudjadreaming.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.6,
+          -18.2
+        ]
+      },
+      "properties": {
+        "name": "Girloorloo Tours at Mimbi Caves",
+        "location": "Mimbi Caves, Fitzroy Crossing",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Ancient fossilised Devonian reef caves",
+          "Native foods, medicine plants, damper and billy tea"
+        ],
+        "contact": {
+          "phone": "0437 546 873",
+          "email": "rosemary@mimbicaves.com.au",
+          "website": "www.mimbicaves.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8605,
+          -31.9505
+        ]
+      },
+      "properties": {
+        "name": "Go Cultural Aboriginal Tours & Experiences",
+        "location": "Kings Park | Perth | Rottnest",
+        "region_code": "PER",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Noongar creation stories",
+          "Native foods and medicine plants at Kings Park"
+        ],
+        "contact": {
+          "phone": "08 9429 8875",
+          "email": "bookings@gocultural.com.au",
+          "website": "www.gocultural.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4658,
+          -30.7489
+        ]
+      },
+      "properties": {
+        "name": "Goldfields Honey Ant Tours",
+        "location": "Kalgoorlie and Goldfields",
+        "region_code": "GF",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Honey ant and witchetty grub foraging",
+          "Bush medicine knowledge"
+        ],
+        "contact": {
+          "phone": "0472 678 144",
+          "email": "dannyulrich1844@gmail.com",
+          "website": "www.goldfieldshoneyanttours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7217,
+          -32.5269
+        ]
+      },
+      "properties": {
+        "name": "Goolamwiin Aboriginal Cultural Tours",
+        "location": "Mandurah and surrounds",
+        "region_code": "PER",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Traditional cultural ceremonies",
+          "Nyungar bushfood catering"
+        ],
+        "contact": {
+          "phone": "0417 183 119",
+          "email": "tkstack@goolamwiin.com.au",
+          "website": "www.goolamwiin.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Home Valley on Balanggarra Country",
+        "location": "Kununurra, East Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Barramundi fishing on the Pentecost River",
+          "Bushfood-themed menu"
+        ],
+        "contact": {
+          "phone": "0477 478 425",
+          "email": "homevalley@balanggarra.com.au",
+          "website": "www.home-valley.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8605,
+          -31.9505
+        ]
+      },
+      "properties": {
+        "name": "In Culture Tours",
+        "location": "Kings Park | Fremantle | Cape Peron",
+        "region_code": "PER",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Whadjuk bush medicine knowledge",
+          "Multi-sensory Dreaming stories"
+        ],
+        "contact": {
+          "phone": "0456 140 398",
+          "email": "bookings@inculturetours.com.au",
+          "website": "www.inculturetours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.9667,
+          -15.9
+        ]
+      },
+      "properties": {
+        "name": "Injiid Marlabu Cultural Experiences",
+        "location": "East Kimberley",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Didgeridoo performance and healing ritual",
+          "Chamberlain Gorge river cruise"
+        ],
+        "contact": {
+          "phone": "0461 477 300",
+          "email": "injiidmarlabu@outlook.com",
+          "website": "www.injiidmarlabu.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Jarndu Ngaank Tours",
+        "location": "Broome",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Women's perspective on Broome culture",
+          "Traditional smoking ceremony"
+        ],
+        "contact": {
+          "phone": "0403 486 955",
+          "email": "hello@jarndutoursbroome.com.au",
+          "website": "www.jarndutoursbroome.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Just Over the Hills",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Boab nut carving and bush fig tasting",
+          "Barramundi and fingermark fishing"
+        ],
+        "contact": {
+          "phone": "0473 950 686",
+          "email": "justoverthehills@gmail.com",
+          "website": "www.justoverthehills.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.8837,
+          -35.0269
+        ]
+      },
+      "properties": {
+        "name": "Kaarl Wirn Cultural Tours",
+        "location": "Albany",
+        "region_code": "SW",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Traditional spearfishing and cast-net techniques",
+          "Catch and cook seafood over open fire"
+        ],
+        "contact": {
+          "phone": "0488 106 233",
+          "email": "bookings@kaarlwirn.com.au",
+          "website": "www.kaarlwirn.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9,
+          -32.4373
+        ]
+      },
+      "properties": {
+        "name": "Katter Kich Art Gallery & Tours",
+        "location": "Katter Kich (Wave Rock), Hyden",
+        "region_code": "WB",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Wave Rock Dreaming story",
+          "Art gallery visit"
+        ],
+        "contact": {
+          "phone": "0477 771 548",
+          "email": "katterkichgalleryandtours@gmail.com",
+          "website": "www.katterkichtours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Kimberley Cultural Adventures",
+        "location": "Broome & Beagle Bay",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Didgeridoo performance",
+          "Boab ginger beer or iced tea"
+        ],
+        "contact": {
+          "phone": "0434 537 639",
+          "email": "robbie@kimberleyculturaladventures.com.au",
+          "website": "www.kimberleyculturaladventures.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Kimberley Dreaming",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Camping on Country",
+          "Barramundi fishing and rock art sites"
+        ],
+        "contact": {
+          "phone": "0400 754 481",
+          "email": "tours@kimberleydreaming.com.au",
+          "website": "www.kimberleydreaming.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Kingfisher Tours",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Bungle Bungle scenic flights and treks",
+          "Muntha welcome, damper and billy tea"
+        ],
+        "contact": {
+          "phone": "(08) 9168 2718",
+          "email": "fly@kingfishertours.com.au",
+          "website": "www.kingfishertours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.15,
+          -33.8333
+        ]
+      },
+      "properties": {
+        "name": "Kodja Place",
+        "location": "Kojonup",
+        "region_code": "WB",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Noongar-Aboriginal and settler history",
+          "Billy tea and damper at Yoondi's Mia Mia"
+        ],
+        "contact": {
+          "phone": "08 9831 0500",
+          "email": "kojonupvisitors@bigpond.com",
+          "website": "www.kodjaplace.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.0333,
+          -33.65
+        ]
+      },
+      "properties": {
+        "name": "Koomal Dreaming",
+        "location": "Yallingup & Dunsborough",
+        "region_code": "SW",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Didgeridoo performance in Ngilgi Cave",
+          "Native food tasting experience"
+        ],
+        "contact": {
+          "phone": "0412 415 355",
+          "email": "info@koomaldreaming.com.au",
+          "website": "www.koomaldreaming.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1656,
+          -27.7085
+        ]
+      },
+      "properties": {
+        "name": "Kurlajiwangga Aboriginal Guided Tours",
+        "location": "Kalbarri",
+        "region_code": "CC",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Murchison River tagalong tour",
+          "Campfire yarns about station life"
+        ],
+        "contact": {
+          "phone": "0475 403 611",
+          "email": "kurlajiwangga98@gmail.com",
+          "website": "www.kurlajiwangga.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.8837,
+          -35.0269
+        ]
+      },
+      "properties": {
+        "name": "Kurrah Mia Culturally Noongar",
+        "location": "Albany",
+        "region_code": "SW",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Oyster Harbour traditional fish traps",
+          "Bushfood plant tasting"
+        ],
+        "contact": {
+          "phone": "0419 320 533",
+          "email": "info@kurrahmia.com.au",
+          "website": "www.kurrahmia.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Lily Lagoon Resort",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Bushfood-inspired restaurant menu",
+          "Lakeside accommodation, Aboriginal owned"
+        ],
+        "contact": {
+          "phone": "(08) 9169 1092",
+          "email": "bookings@lilylagoonresort.org.au",
+          "website": "www.lilylagoonresort.org.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Mabu Buru Tours",
+        "location": "Broome",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Traditional storytelling, singing, dancing",
+          "Coastal foraging, hunting and feasting"
+        ],
+        "contact": {
+          "phone": "0400 386 667",
+          "email": "mabuburu@outlook.com",
+          "website": "www.mabuburu.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Narlijia Experiences Broome",
+        "location": "Broome",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Roebuck Bay mangrove foraging",
+          "Yawuru saltwater lifestyle knowledge"
+        ],
+        "contact": {
+          "phone": "(08) 9195 0232",
+          "email": "bart@toursbroome.com.au",
+          "website": "www.toursbroome.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.6414,
+          -33.3271
+        ]
+      },
+      "properties": {
+        "name": "Ngalang Wongi Aboriginal Cultural Tours",
+        "location": "Bunbury",
+        "region_code": "SW",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Private didgeridoo performance",
+          "Traditional ochre making"
+        ],
+        "contact": {
+          "phone": "0457 360 517",
+          "email": "troy@ngalangwongi.com.au",
+          "website": "www.ngalangwongi.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.2667,
+          -31.4833
+        ]
+      },
+      "properties": {
+        "name": "Njaki Njaki Aboriginal Cultural Tours",
+        "location": "Merredin",
+        "region_code": "WB",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Merredin Peak trails",
+          "Overnight camp with kangaroo and damper"
+        ],
+        "contact": {
+          "phone": "0407 984 470",
+          "email": "tours@njakinjaki.com.au",
+          "website": "www.njakinjaki.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8605,
+          -31.9505
+        ]
+      },
+      "properties": {
+        "name": "Nyungar Aboriginal Cultural Tours",
+        "location": "South Perth & Kings Park",
+        "region_code": "PER",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Kings Park native botanical gardens",
+          "Traditional Nyungar foods"
+        ],
+        "contact": {
+          "phone": "0477 442 515",
+          "email": "info@nyungartours.com.au",
+          "website": "www.nyungartours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Pete's Cultural Adventures",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Barramundi fishing charters",
+          "Crocodile spotting and awareness"
+        ],
+        "contact": {
+          "phone": "0484 648 633",
+          "email": "petesculturaladventures@gmail.com",
+          "website": "www.petesculturaladventures.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Southern Cross Coastal Walks at Lullumb",
+        "location": "Dampier Peninsula",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Bardi Jawi ecological knowledge",
+          "Catch and cook by the beach"
+        ],
+        "contact": {
+          "phone": "0498 058 095",
+          "email": "malati@lullumbtours.com.au",
+          "website": "www.lullumbtours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6236,
+          -17.3
+        ]
+      },
+      "properties": {
+        "name": "Trevor's Traditional Tours",
+        "location": "Djarindjin, Dampier Peninsula",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Spear throwing and boomerang throwing",
+          "Bush honey and shell foraging"
+        ],
+        "contact": {
+          "phone": "0447 513 123",
+          "email": "campground@djarindjin.com.au",
+          "website": "www.trevorstraditionaltours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6236,
+          -17.3
+        ]
+      },
+      "properties": {
+        "name": "Uptuyu Aboriginal Adventures",
+        "location": "Udialla Springs, via Derby",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Private 4WD safari camps",
+          "Barramundi fishing on the Fitzroy River"
+        ],
+        "contact": {
+          "phone": "0459 517 749",
+          "email": "info@uptuyu.com.au",
+          "website": "www.uptuyu.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Walaja Honey & Cultural Immersion",
+        "location": "Broome",
+        "region_code": "KIM",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Organic native honey harvesting",
+          "750,000-acre cattle station honey production"
+        ],
+        "contact": {
+          "phone": "0437 956 515",
+          "email": "info@kimberleybushhoney.com.au",
+          "website": "www.kimberleybushhoney.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.6588,
+          -24.8829
+        ]
+      },
+      "properties": {
+        "name": "Wooramulla Eco Cultural Journeys",
+        "location": "Carnarvon",
+        "region_code": "CC",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Traditional sand ceremony",
+          "Gascoyne bushfood town foraging tour"
+        ],
+        "contact": {
+          "phone": "0477 126 983",
+          "email": "tours@wooramulla.com.au",
+          "website": "www.wooramulla.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.75,
+          -33.3167
+        ]
+      },
+      "properties": {
+        "name": "Wuddi Aboriginal Cultural Tours",
+        "location": "Dumbleyung",
+        "region_code": "WB",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Rare wildflower sites",
+          "Traditional artefacts and toolmaking tour"
+        ],
+        "contact": {
+          "phone": "0476 788 139",
+          "email": "wuddiaboriginaltours@gmail.com",
+          "website": "www.wudditours.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5333,
+          -25.8833
+        ]
+      },
+      "properties": {
+        "name": "Wula Gura Nyinda Eco Cultural Adventures",
+        "location": "Shark Bay",
+        "region_code": "CC",
+        "category": "tour",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Overnight eco cultural camping",
+          "Bush tucker and tap-stick/didgeridoo lessons"
+        ],
+        "contact": {
+          "phone": "0432 029 436",
+          "email": "info@wulagura.com.au",
+          "website": "www.wulagura.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8605,
+          -31.9505
+        ]
+      },
+      "properties": {
+        "name": "All Good Grub Bushtukka Catering",
+        "location": "Perth and surrounds",
+        "region_code": "PER",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Native food-inspired catering menus",
+          "Customisable platters and damper boards"
+        ],
+        "contact": {
+          "phone": "0412 321 858",
+          "email": "allgoodgrub@gmail.com",
+          "website": "www.allgoodgrub.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.6588,
+          -24.8829
+        ]
+      },
+      "properties": {
+        "name": "Bibbi Murra",
+        "location": "Carnarvon",
+        "region_code": "CC",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Handmade native-plant soaps and balms",
+          "Wellness bush tea"
+        ],
+        "contact": {
+          "phone": "0477 126 983",
+          "email": "mulanji.consultants@gmail.com",
+          "website": "www.bibbimurra.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Bindam Mie",
+        "location": "Broome, Kimberley",
+        "region_code": "KIM",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Wild-harvested Kimberley superfoods",
+          "Boab powder and bush drinks"
+        ],
+        "contact": {
+          "phone": "0434 537 639",
+          "email": "robbie@kimberleyculturaladventures.com.au",
+          "website": "www.bindammie.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7406,
+          -15.7757
+        ]
+      },
+      "properties": {
+        "name": "Blak Tapas",
+        "location": "Kununurra",
+        "region_code": "KIM",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "First Nations-owned cafe and social enterprise",
+          "Local native-ingredient menu and youth training"
+        ],
+        "contact": {
+          "phone": "0417 119 853",
+          "email": "hello@blaktapas.com.au",
+          "website": "www.facebook.com/blaktapas/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8833,
+          -31.9167
+        ]
+      },
+      "properties": {
+        "name": "Gather Foods",
+        "location": "Inglewood, Perth",
+        "region_code": "PER",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Noongar-owned native food catering",
+          "Bush tucker talks and ingredient wholesale"
+        ],
+        "contact": {
+          "phone": "(08) 9371 7000",
+          "email": "admin@gatherfoods.com.au",
+          "website": "www.gatherfoods.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Kook Koo's Own (Mother's Own)",
+        "location": "Broome",
+        "region_code": "KIM",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Wild-harvested traditional healing balms",
+          "Remedies for skin, joints and sleep"
+        ],
+        "contact": {
+          "phone": "0400 878 898",
+          "email": "shop@kookkoosown.com.au",
+          "website": "www.kookkoosown.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.6,
+          -16.9
+        ]
+      },
+      "properties": {
+        "name": "Kimberley Wild Gubinge",
+        "location": "Dampier Peninsula",
+        "region_code": "KIM",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Highest natural source of vitamin C, wild harvested",
+          "Freeze-dried gubinge (Kakadu plum) powder"
+        ],
+        "contact": {
+          "phone": "(08) 9192 4000",
+          "email": "gday@kimberleywildgubinge.com.au",
+          "website": "www.kimberleywildgubinge.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9667,
+          -31.8667
+        ]
+      },
+      "properties": {
+        "name": "Maalinup Aboriginal Experiences",
+        "location": "Swan Valley",
+        "region_code": "PER",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Native herbs, spices and giftware gallery",
+          "Jams, chutneys and dukkah tastings"
+        ],
+        "contact": {
+          "phone": "0411 112 450",
+          "email": "manager@maalinup.com.au",
+          "website": "www.maalinup.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2359,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Mayi Harvests",
+        "location": "Broome",
+        "region_code": "KIM",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Wild-harvested dried and frozen native ingredients",
+          "Gabiny (Kakadu plum) and djilanydjin (sleepy tea)"
+        ],
+        "contact": {
+          "phone": "0403 486 955",
+          "email": "hello@mayiharvests.com.au",
+          "website": "www.mayiharvests.com.au"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.8463,
+          -20.7364
+        ]
+      },
+      "properties": {
+        "name": "Pilbara Bush Remedy",
+        "location": "Karratha",
+        "region_code": "PIL",
+        "category": "product",
+        "source": "WAITOC Aboriginal Bushfood and Wildflower Trails brochure",
+        "highlights": [
+          "Handmade Pilbara bush remedies",
+          "Bush medicine workshops"
+        ],
+        "contact": {
+          "phone": "0409 461 411",
+          "email": "wayiba@pilbarabushremedy.com",
+          "website": "www.pilbarabushremedy.com"
+        }
+      }
+    }
+  ]
+}

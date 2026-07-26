@@ -393,6 +393,11 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
             <span>Aboriginal Country</span>
             <span id="btn-aboriginal" class="filter-dot"></span>
         </div>
+        <div class="filter-row" onclick="toggleBushfoodTours()">
+            <img src="icons/bushberry.png" style="width:26px;height:26px;">
+            <span>Bushfood &amp; Cultural Tours</span>
+            <span id="btn-bushfood" class="filter-dot"></span>
+        </div>
     </div>
 </div>
 
@@ -503,6 +508,8 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
 <script src="trails.js"></script>
 <script src="aboriginal.js"></script>
 <script src="geosites.js"></script>
+<script src="bushfood.js"></script>
+<script src="seasons.js"></script>
 <script src="ui.js"></script>
 <script>
 
@@ -667,6 +674,7 @@ function buildSearchIndex() {
         { data: typeof geositesData !== 'undefined' ? geositesData : null, layer: 'GeoSites' },
         { data: typeof lighthouseData !== 'undefined' ? lighthouseData : null, layer: 'Lighthouses' },
         { data: typeof aboriginalData !== 'undefined' ? aboriginalData : null, layer: 'Aboriginal Sites' },
+        { data: typeof bushfoodLayer !== 'undefined' && bushfoodLayer ? bushfoodLayer.toGeoJSON() : null, layer: 'Bushfood & Cultural Tours' },
     ];
     sources.forEach(function(src) {
         if (!src.data || !src.data.features) return;

@@ -52,6 +52,8 @@ window.addEventListener('DOMContentLoaded', function() {
     window.toggleWater = toggleWater;
     window.toggleLighthouses = toggleLighthouses;
     window.toggleAboriginal = toggleAboriginal;
+    window.toggleBushfoodTours = toggleBushfoodTours;
+    window.filterBushfoodByCategory = filterBushfoodByCategory;
     window.toggleCaves = toggleGeosites;
     window.toggleFossils = toggleGeosites;
     window.toggleGeosites = toggleGeosites;

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA Coastal Explorer — Field Guide</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #d35400;
+            --bg-light: #f8f9fa;
+            --text-dark: #333333;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        .nav-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.2rem;
+        }
+
+        .nav-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.1rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .nav-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-card li {
+            margin-bottom: 0.8rem;
+        }
+
+        .nav-card a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-card a:hover {
+            color: var(--accent);
+        }
+
+        /* Main Content Rules */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        section {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin: 0 0 1rem 0;
+            font-size: 1.05rem;
+        }
+
+        /* Tip Cards Grid */
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .tip-card {
+            background: white;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            border-radius: 0 8px 8px 0;
+            padding: 1.2rem;
+        }
+
+        .tip-card h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        /* Checklist styling */
+        .kit-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .kit-list li {
+            padding-left: 1.8rem;
+            position: relative;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .kit-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            aside {
+                position: relative;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WA Coastal Explorer</h1>
+        <p>Your Personal Field Guide to Caves, Fossils & Beachcombing</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Quick Navigation Sidebar -->
+        <aside>
+            <div class="nav-card">
+                <h3>Guide Sections</h3>
+                <ul>
+                    <li><a href="#beachcombing">🌊 Beachcombing Guide</a></li>
+                    <li><a href="#fossils">🦴 Fossil Hunting</a></li>
+                    <li><a href="#kit">🎒 Glovebox Day Kit</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main>
+            
+            <!-- Beachcombing Section -->
+            <section id="beachcombing">
+                <h2>🌊 Premium Beachcombing Principles</h2>
+                <p>Western Australia features highly dynamic currents. Shifting from the cold Southern Ocean up to the tropical Ningaloo reef systems completely transforms the specimens you will find on the sand.</p>
+                
+                <div class="tip-grid">
+                    <div class="tip-card">
+                        <h4>The Cyclonic/Storm Boost</h4>
+                        <p>The best time to walk any beach is the morning after a low-pressure system or winter storm. Heavy swells throw deep-sea specimens high onto the dry sand.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Target the "Wrack Line"</h4>
+                        <p>Look where dried kelp, seagrass, and wood debris tangle on the sand. This debris acts like a natural comb, catching light and fragile shells like paper nautiluses.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>The Hermit Crab Check</h4>
+                        <p>From Shark Bay northward, always check inside a glossy shell before pocketing it. A huge percentage of shells serve as active mobile homes for local hermit crabs.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Scan the "Cusp" Horns</h4>
+                        <p>On crescent-shaped bays, walk the very tips of the crescent curves. This is where incoming waves naturally lose their velocity and drop their heaviest cargo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fossil Hunting Section -->
+            <section id="fossils">
+                <h2>🦴 Fossil Ground Tactics</h2>
+                <p>Whether exploring coastal limestone cuts or dry inland river beds, patience and looking for distinct boundaries is key to spotting prehistoric anomalies.</p>
+                
+                <div class="tip-grid">
+                    <div class="tip-card">
+                        <h4>The Wet-Rock Contrast</h4>
+                        <p>Dry dirt, dust, and clay easily obscure fine details. Spritzing a suspect stone with a small mist of water instantly darkens the matrix and makes fossil lines or shell chambers jump out.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Know the Green Zones</h4>
+                        <p>National Parks, Marine Sanctuaries, and Nature Reserves have strict "look but don't take" laws. Keep your collecting strictly to open Crown land or roadside cuts where permitted.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>The Miner's Right Rule</h4>
+                        <p>To legally keep up to 20kg of samples from public Crown land, ensure your Miner's Right permit is active. It costs under $30, never expires, and keeps your road trip entirely stress-free.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Glove Box Kit Section -->
+            <section id="kit">
+                <h2>🎒 The "Just-in-Case" 3-Item Glovebox Kit</h2>
+                <p>You don't need a heavy pack or specialised geological equipment to enjoy a relaxed day out scanning the terrain. Keep these three items in your boot or glove compartment:</p>
+                <ul class="kit-list">
+                    <li><strong>Small Spray Bottle of Water:</strong> Used to instantly clean dust and make fossil lines or hidden shell colors pop out on location.</li>
+                    <li><strong>Sturdy Gardening Gloves:</strong> Essential for comfortably flipping over rough, sharp river pebbles or scrambling through honeycomb limestone formations.</li>
+                    <li><strong>Jeweller's Loupe (10x Magnification):</strong> A tiny, cheap magnifying glass lets you inspect close-up crystal structures, fossilised root systems, or micro-shells right on the spot.</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

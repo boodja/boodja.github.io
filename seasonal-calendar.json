@@ -1,0 +1,184 @@
+{
+  "noongar": {
+    "label": "Noongar 6 Seasons \u2014 South West",
+    "region_codes": [
+      "SW",
+      "PER",
+      "WB"
+    ],
+    "seasons": [
+      {
+        "name": "Birak",
+        "months": [
+          12,
+          1
+        ],
+        "desc": "Hot and dry \u2014 season of the young"
+      },
+      {
+        "name": "Bunuru",
+        "months": [
+          2,
+          3
+        ],
+        "desc": "Warm easterly winds \u2014 season of adolescence"
+      },
+      {
+        "name": "Djeran",
+        "months": [
+          4,
+          5
+        ],
+        "desc": "Cool and pleasant \u2014 season of adulthood"
+      },
+      {
+        "name": "Makuru",
+        "months": [
+          6,
+          7
+        ],
+        "desc": "Cold and wet \u2014 season of fertility"
+      },
+      {
+        "name": "Djilba",
+        "months": [
+          8,
+          9
+        ],
+        "desc": "Cold, lessening rain \u2014 season of conception"
+      },
+      {
+        "name": "Kambarang",
+        "months": [
+          10,
+          11
+        ],
+        "desc": "Longer dry periods \u2014 season of the birth"
+      }
+    ]
+  },
+  "bardi": {
+    "label": "Bardi 6 Seasons \u2014 Kimberley",
+    "region_codes": [
+      "KIM"
+    ],
+    "seasons": [
+      {
+        "name": "Mangal",
+        "months": [
+          12,
+          1
+        ],
+        "desc": "First big rains \u2014 green tree frog appears",
+        "period": "Wet"
+      },
+      {
+        "name": "Ngaladan",
+        "months": [
+          2,
+          3
+        ],
+        "desc": "Cyclone season \u2014 storms from the ocean",
+        "period": "Wet"
+      },
+      {
+        "name": "Iralbu",
+        "months": [
+          4,
+          5
+        ],
+        "desc": "Hot period \u2014 after the wet season",
+        "period": "Dry"
+      },
+      {
+        "name": "Bargana",
+        "months": [
+          6,
+          7
+        ],
+        "desc": "Cool season \u2014 south easterly winds blow",
+        "period": "Dry"
+      },
+      {
+        "name": "Djalalayi",
+        "months": [
+          8,
+          9
+        ],
+        "desc": "Warming up \u2014 west winds return",
+        "period": "Dry"
+      },
+      {
+        "name": "Lalin",
+        "months": [
+          10,
+          11
+        ],
+        "desc": "Hot and humid \u2014 turtle mating season",
+        "period": "Dry"
+      }
+    ]
+  },
+  "yawuru": {
+    "label": "Yawuru 6 Seasons \u2014 Kimberley",
+    "region_codes": [
+      "KIM"
+    ],
+    "seasons": [
+      {
+        "name": "Mangala",
+        "months": [
+          12,
+          1
+        ],
+        "desc": "First big rains \u2014 wet, hot and humid time of year",
+        "period": "Wet"
+      },
+      {
+        "name": "Marral",
+        "months": [
+          2,
+          3
+        ],
+        "desc": "Cyclone season \u2014 dragonflies appear and eat mosquitoes",
+        "period": "Wet"
+      },
+      {
+        "name": "Wirralburu",
+        "months": [
+          4,
+          5
+        ],
+        "desc": "Hot period \u2014 feel coolness coming in at night",
+        "period": "Dry"
+      },
+      {
+        "name": "Barrgana",
+        "months": [
+          6,
+          7
+        ],
+        "desc": "Cool season \u2014 turkeys are fat, time for hunting inland",
+        "period": "Dry"
+      },
+      {
+        "name": "Wirlburu",
+        "months": [
+          8,
+          9
+        ],
+        "desc": "Warming up \u2014 driest time of year, winds create wily-wily (dust devils)",
+        "period": "Dry"
+      },
+      {
+        "name": "Laja",
+        "months": [
+          10,
+          11
+        ],
+        "desc": "Hot and humid \u2014 return of rain, the heat and mosquitoes",
+        "period": "Dry"
+      }
+    ]
+  }
+}
