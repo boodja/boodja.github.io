@@ -186,6 +186,63 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
     flex-shrink: 0;
 }
 .filter-dot.active { background: #d67214; }
+.filter-sheet {
+    display: none;
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 1500;
+    border-radius: 16px 16px 0 0;
+    padding: 12px 0 8px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+.sheet-title {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+.sheet-close {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0;
+}
+.sheet-body { padding: 0 4px; }
+.filter-category {
+    padding: 10px 16px 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #d67214;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.filter-row-disabled { opacity: 0.5; pointer-events: none; }
+.menu-btn {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.menu-btn.active {
+    background: #fff3e0;
+    border-color: #d67214;
+}
 </style>
 </head>
 <body>
@@ -267,57 +324,27 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
     </div>
 </div>
 
-<!-- Filter bottom sheet -->
-<div id="filter-sheet" style="display:none;position:fixed;bottom:45px;left:0;right:0;background:#ffffff;z-index:1500;border-radius:16px 16px 0 0;padding:12px 0 8px;box-shadow:0 -4px 20px rgba(0,0,0,0.4);">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:0 16px;margin-bottom:8px;">
-    <span style="color:#333;font-size:13px;font-weight:600;letter-spacing:0.06em;">LAYERS</span>
-    <button onclick="closeFilterSheet()" style="background:none;border:none;color:#333;font-size:22px;cursor:pointer;padding:0;">✕</button>
-</div>
-    <div style="padding:0 4px;">
-        <div class="filter-row" onclick="toggleLighthouses()">
-            <img src="icons/lighthouse.png" style="width:26px;height:26px;">
-            <span>Lighthouses</span>
-            <span id="btn-lighthouses" class="filter-dot"></span>
-        </div>
-        <div class="filter-row" onclick="toggleGeosites()">
-            <img src="icons/fossil.png" style="width:26px;height:26px;">
-            <span>GeoSites</span>
-            <span id="btn-geosites" class="filter-dot"></span>
-        </div>
-        <div class="filter-row" onclick="toggleAboriginal()">
-            <img src="icons/aboriginal.png" style="width:26px;height:26px;">
-            <span>Aboriginal Country</span>
-            <span id="btn-aboriginal" class="filter-dot"></span>
-        </div>
-        <div class="filter-row" onclick="toggleTrailLayer('walk')">
-            <img src="icons/trail.png" style="width:26px;height:26px;">
-            <span>Walk Trails</span>
-            <span id="btn-walk" class="filter-dot"></span>
-        </div>
-        <div class="filter-row" onclick="toggleTrailLayer('paddle')">
-            <img src="icons/paddle.png" style="width:26px;height:26px;">
-            <span>Paddle Trails</span>
-            <span id="btn-paddle" class="filter-dot"></span>
-        </div>
-        <div class="filter-row" onclick="toggle2x2()">
-            <img src="icons/2x2.png" style="width:26px;height:26px;">
-            <span>2x2 Tracks</span>
-            <span id="btn-2x2" class="filter-dot"></span>
-        </div>
+<!-- MENU ONE — Travel essentials -->
+<div id="sheet-travel" class="filter-sheet">
+    <div class="sheet-header">
+        <span class="sheet-title">TRAVEL</span>
+        <button onclick="closeAllSheets()" class="sheet-close">✕</button>
+    </div>
+    <div class="sheet-body">
         <div class="filter-row" onclick="toggleWACamps()">
             <img src="icons/camps.png" style="width:26px;height:26px;">
-            <span>Campsites (WA)</span>
+            <span>Campsites</span>
             <span id="btn-wacamps" class="filter-dot"></span>
-        </div>
-        <div class="filter-row" onclick="toggleFuel()">
-            <img src="icons/fuel.png" style="width:26px;height:26px;">
-            <span>Fuel</span>
-            <span id="btn-fuel" class="filter-dot"></span>
         </div>
         <div class="filter-row" onclick="toggleWater()">
             <img src="icons/drinkwater.png" style="width:26px;height:26px;">
             <span>Drinking Water</span>
             <span id="btn-water" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggleFuel()">
+            <img src="icons/fuel.png" style="width:26px;height:26px;">
+            <span>Fuel</span>
+            <span id="btn-fuel" class="filter-dot"></span>
         </div>
         <div class="filter-row" onclick="toggleDFES()">
             <img src="icons/dfes/ew-other-fire.svg" style="width:26px;height:26px;">
@@ -327,10 +354,95 @@ body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'S
     </div>
 </div>
 
-<!-- Explore button -->
-<div style="position:fixed;bottom:100px;right:10px;z-index:1001;">
-    <button onclick="toggleFilterSheet()" style="background:white;border:1px solid #ddd;border-radius:8px;padding:6px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+<!-- MENU TWO — Tracks & Heritage -->
+<div id="sheet-tracks" class="filter-sheet">
+    <div class="sheet-header">
+        <span class="sheet-title">EXPLORE</span>
+        <button onclick="closeAllSheets()" class="sheet-close">✕</button>
+    </div>
+    <div class="sheet-body">
+        <div class="filter-category">TRACKS</div>
+        <div class="filter-row" onclick="toggleTrailLayer('walk')">
+            <img src="icons/trail.png" style="width:26px;height:26px;">
+            <span>Walks</span>
+            <span id="btn-walk" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggleTrailLayer('paddle')">
+            <img src="icons/paddle.png" style="width:26px;height:26px;">
+            <span>Paddle</span>
+            <span id="btn-paddle" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggle2x2()">
+            <img src="icons/2x2.png" style="width:26px;height:26px;">
+            <span>2x2 Tracks</span>
+            <span id="btn-2x2" class="filter-dot"></span>
+        </div>
+        <div class="filter-row filter-row-disabled">
+            <img src="icons/trail.png" style="width:26px;height:26px;opacity:0.4;">
+            <span style="color:#bbb;">Wildflower Trails</span>
+            <span class="filter-dot" style="background:#eee;"></span>
+        </div>
+        <div class="filter-category">HERITAGE</div>
+        <div class="filter-row" onclick="toggleLighthouses()">
+            <img src="icons/lighthouse.png" style="width:26px;height:26px;">
+            <span>Lighthouses</span>
+            <span id="btn-lighthouses" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggleAboriginal()">
+            <img src="icons/aboriginal.png" style="width:26px;height:26px;">
+            <span>Aboriginal Country</span>
+            <span id="btn-aboriginal" class="filter-dot"></span>
+        </div>
+    </div>
+</div>
+
+<!-- MENU THREE — Geo & Marine -->
+<div id="sheet-geo" class="filter-sheet">
+    <div class="sheet-header">
+        <span class="sheet-title">DISCOVER</span>
+        <button onclick="closeAllSheets()" class="sheet-close">✕</button>
+    </div>
+    <div class="sheet-body">
+        <div class="filter-category">GEO</div>
+        <div class="filter-row" onclick="toggleGeosites('shells')">
+            <img src="icons/fossil.png" style="width:26px;height:26px;">
+            <span>Shells</span>
+            <span id="btn-shells" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggleGeosites('gems')">
+            <img src="icons/fossil.png" style="width:26px;height:26px;">
+            <span>Gems &amp; Minerals</span>
+            <span id="btn-gems" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggleGeosites('caves')">
+            <img src="icons/fossil.png" style="width:26px;height:26px;">
+            <span>Caves</span>
+            <span id="btn-caves" class="filter-dot"></span>
+        </div>
+        <div class="filter-row" onclick="toggleGeosites('fossils')">
+            <img src="icons/fossil.png" style="width:26px;height:26px;">
+            <span>Fossils</span>
+            <span id="btn-geosites" class="filter-dot"></span>
+        </div>
+        <div class="filter-category">MARINE</div>
+        <div class="filter-row filter-row-disabled">
+            <img src="icons/fossil.png" style="width:26px;height:26px;opacity:0.4;">
+            <span style="color:#bbb;">Whale Sharks</span>
+            <span class="filter-dot" style="background:#eee;"></span>
+        </div>
+    </div>
+</div>
+
+<!-- Three menu buttons -->
+<div style="position:fixed;bottom:100px;right:10px;z-index:1001;display:flex;flex-direction:column;gap:8px;">
+    <button onclick="toggleSheet('sheet-travel')" id="menu-btn-travel" class="menu-btn">
         <img src="icons/explore.png" style="width:32px;height:32px;display:block;">
+    </button>
+    <button onclick="toggleSheet('sheet-tracks')" id="menu-btn-tracks" class="menu-btn">
+        <img src="icons/2x2.png" style="width:32px;height:32px;display:block;">
+    </button>
+    <button onclick="toggleSheet('sheet-geo')" id="menu-btn-geo" class="menu-btn">
+        <img src="icons/fossil.png" style="width:32px;height:32px;display:block;">
     </button>
 </div>
 

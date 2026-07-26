@@ -1,32 +1,65 @@
-let geositeMarkers = [];
-let geositesActive = false;
-let geositesData = null;
+// ── GeoSites layer — filterable by category ──
+const GEOSITE_CATEGORIES = {
+    shells:    { color: '#1a6dd8',  label: 'Shells',          btnId: 'btn-shells' },
+    gems:      { color: '#c2185b',  label: 'Gems & Minerals', btnId: 'btn-gems' },
+    caves:     { color: '#1a6b5c',  label: 'Caves',           btnId: 'btn-caves' },
+    fossils:   { color: '#8B6347',  label: 'Fossils',         btnId: 'btn-geosites' },
+    meteorites:{ color: '#546e7a',  label: 'Meteorites',      btnId: 'btn-meteorites' }
+};
 
-function toggleGeosites() {
-    const btn = document.getElementById('btn-geosites');
-    if (geositesActive) {
-        geositeMarkers.forEach(function(m) { map.removeLayer(m); });
-        geositeMarkers = [];
-        geositesActive = false;
-        btn.classList.remove('active');
+let geositeMarkers = [];
+let geositesData = null;
+let activeGeoCategories = new Set();
+
+function toggleGeosites(category) {
+    // If no category passed, toggle all (backwards compat)
+    if (!category) category = 'fossils';
+
+    const cat = GEOSITE_CATEGORIES[category];
+    if (!cat) return;
+
+    const btn = document.getElementById(cat.btnId);
+
+    if (activeGeoCategories.has(category)) {
+        // Turn off this category
+        activeGeoCategories.delete(category);
+        if (btn) btn.classList.remove('active');
     } else {
-        geositesActive = true;
-        btn.classList.add('active');
-        if (geositesData) {
-            renderGeosites();
-        } else {
-            fetch('geosites.geojson')
-                .then(r => r.json())
-                .then(function(data) { geositesData = data; renderGeosites(); })
-                .catch(function(err) { console.log('GeoSites error:', err); });
-        }
+        // Turn on this category
+        activeGeoCategories.add(category);
+        if (btn) btn.classList.add('active');
+    }
+
+    // Remove all current markers and re-render active categories
+    geositeMarkers.forEach(function(m) { map.removeLayer(m); });
+    geositeMarkers = [];
+
+    if (activeGeoCategories.size === 0) return;
+
+    if (geositesData) {
+        renderGeosites();
+    } else {
+        fetch('geosites.geojson')
+            .then(r => r.json())
+            .then(function(data) { geositesData = data; renderGeosites(); })
+            .catch(function(err) { console.log('GeoSites error:', err); });
     }
 }
 
 function renderGeosites() {
+    // Build set of active colors
+    const activeColors = new Set();
+    activeGeoCategories.forEach(function(cat) {
+        activeColors.add(GEOSITE_CATEGORIES[cat].color);
+    });
+
     geositesData.features.forEach(function(f) {
         const p = f.properties;
         const pinColor = p.color || '#8B6347';
+
+        // Only show if this pin's color matches an active category
+        if (!activeColors.has(pinColor)) return;
+
         const icon = L.divIcon({
             html: '<div style="width:14px;height:14px;background:' + pinColor + ';border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>',
             className: '',
@@ -48,7 +81,3 @@ function renderGeosites() {
         geositeMarkers.push(marker);
     });
 }
-
-// Expose functions to global scope for inline HTML onclick handlers
-
-function toggleFilterSheet() {
