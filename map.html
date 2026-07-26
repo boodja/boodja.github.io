@@ -511,8 +511,7 @@ function toggleDrawer() {
     const isOpen = drawer.style.display === 'block';
     drawer.style.display = isOpen ? 'none' : 'block';
     if (!isOpen) {
-        document.getElementById('explore-panel').style.display = 'none';
-        document.getElementById('travel-panel').style.display = 'none';
+        closeAllSheets();
         closeAddPinChooser();
     }
 }
@@ -534,17 +533,9 @@ function setMapLayer(layer) {
     currentLayer = layer;
 }
 function togglePanel(type) {
-    const explore = document.getElementById('explore-panel');
-    const travel  = document.getElementById('travel-panel');
+    // Legacy function - replaced by toggleSheet
     closeDrawer();
     closeAddPinChooser();
-    if (type === 'explore') {
-        travel.style.display = 'none';
-        explore.style.display = explore.style.display === 'block' ? 'none' : 'block';
-    } else {
-        explore.style.display = 'none';
-        travel.style.display = travel.style.display === 'block' ? 'none' : 'block';
-    }
 }
 function openNature(type) {
     closeDrawer();
